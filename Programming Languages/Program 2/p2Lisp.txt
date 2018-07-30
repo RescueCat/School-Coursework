@@ -1,0 +1,71 @@
+(defun skipN (lst N)
+	( cond ((NULL lst) NIL) 			;1st if the list is empty return NIL
+		((> N 0) (skipN (cdr lst) (- N 1))) 	;2nd while n > 0 recurse
+		((eql N 0) lst) 			;3rd n = 0,  stop
+	)
+)
+
+(defmacro while (expr &body body)
+  `(do ()
+       ((not ,expr))
+     ,@body))
+
+(defun replaceIn(lst1 lst2 char)
+
+	(setf n (1- (list-length lst1)))
+	(setf j (nth 1 lst1))
+
+	(let ((i n))
+		(while(> i -1)
+			(setf k (nth n lst1))
+			(if (eql k (car lst2))
+				(setf(nth n lst1) char)
+				(if (eql k 'R)
+					(setf(nth n lst1) char)
+				)	
+			)
+			(setf i (- i 1))
+			(setf n (1- n))
+			;(print n)
+		)
+	)
+	(print lst1)	
+)
+
+(defun insertAfter(lst atm insValue)
+	(cond((NULL lst) NIL)
+		((eql (car lst) atm) (cons (CAR lst) (cons insValue (insertAfter (cdr lst) atm insValue))))
+		(T (cons (car lst) (insertAfter (cdr lst) atm insValue)))
+	)
+)
+
+(defun insertNth (lst N insValue)
+
+	(let ((retval nil))
+		(loop for i from 0 to (- (list-length lst) 1)
+			do
+				(when (= i N)
+					(push insValue retval))
+				(push (nth i lst) retval)
+		)
+		(when (>= N (length lst))
+			(push insValue retval))
+		(nreverse retval)
+	)
+)
+
+(defun insertAfterAll(lst atm insValue)
+	(cond((NULL lst) NIL)
+		((ATOM (car lst)) (cons (car lst) (cons insValue (insertAfterAll (cdr lst) atm insValue))))
+		(T (cons (insertAfter (car lst) atm insValue) (insertAfter (cdr lst) atm insValue)))
+	)
+)
+
+(defun atomiclist (lst)
+	(cond ((ATOM lst) (cons lst()))
+		((AND (NULL (cdr lst))(not(ATOM (car lst))))(atomiclist (car lst)))
+		((NULL (cdr lst)) lst)
+		(T (APPEND (atomiclist (car lst)) (atomiclist (cdr lst))))
+	)
+)
+

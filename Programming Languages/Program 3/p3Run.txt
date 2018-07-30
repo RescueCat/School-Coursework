@@ -1,0 +1,45 @@
+;; test +=
+(setf x 1 y 10)
+(+= x 5)
+(print x)
+
+(+= y x)
+(print y)
+
+;; Iterate test 1 - simple
+(setf n 5)
+(iterate i 1 (+ n 2) 2
+     (print (list 'one i (+ n 2) 2) )
+)
+
+;; Iterate test 2 - changing ctrl variable
+(setf n 5)
+(iterate i 1 (+ n 2) 2
+     (print (list 'two i (+ n 2) 2))
+     (+= i 1)
+)
+
+;; Iterate test 3 - changing the inc should not affect iterations
+(setf n 5)
+(setf inc 2)
+(iterate i 1 (+ n 2) inc
+     (print (list 'three i (+ n 2) inc))
+     (+= inc 1)
+)
+
+;; Iterate test 4 - changing termination condition will affect iterations
+(setf n 5)
+(setf incr 2)
+(iterate i 1 (+ n 2) incr
+     (print (list 'four i (+ n 2) incr))
+     (+= n 1)
+)
+;; Iterate test 5 - changing ctrl var and termination will affect iterations
+(setf n 5)
+(setf inc 2)
+(iterate i 1 (+ n 2) inc
+     (print (list 'five i (+ n 2) inc))
+     (+= n 1)
+     (+= i 1)
+     (+= inc 1)
+)

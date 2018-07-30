@@ -1,0 +1,13 @@
+;;;(+= numericValue incrementValue)
+(defmacro += (numericValue incrementValue)
+    `(setf ,numericValue (+ ,numericValue ,incrementValue))
+)
+
+;;;(iterate controlVariable beginValueExpr endValueExpr incrExpr bodyexpr1 bodyexpr2 ... bodyexprN)
+(defmacro iterate (controlVariable beginValue endValue incExpr &body body)
+    (let* ((incVar (gensym))(endVar (gensym)))
+         `(do ((eval ,endValue)(,incVar ,incExpr)(,endVar ,endValue)(,controlVariable ,beginValue (+= ,controlVariable ,incVar)))
+              ((> ,controlVariable ,endValue) ,controlVariable)
+              ,@ body)
+    )
+)

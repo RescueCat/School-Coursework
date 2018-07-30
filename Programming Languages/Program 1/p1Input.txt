@@ -1,0 +1,91 @@
+* Initialize the Heap
+RESET 600
+PRTALL
+ALLOC 100 FIRST FIRST 100
+* #1 Show the one allocated and one free node
+PRTALL
+ALLOC 50  SECOND SECOND 50
+* #2 Show the two allocated and the now smaller free node
+PRTALL
+ALLOC 100 THIRD THIRD 100
+ALLOC 50 FOURTH FOURTH 50
+ALLOC 50 FIFTH FIFTH 50
+ALLOC 40 SIXTH SIXTH 40
+ALLOC 100 7TH 7TH 100
+ALLOC 40 8TH 8TH 40
+ALLOC 40 9TH 9TH 40
+* #3 Show all the nodes that were successfully allocated followed by one small free node
+PRTALL
+PRTFREE
+* Start freeing some nodes
+FREE FOURTH
+* #4 Show the allocated nodes and two free nodes
+PRTALL
+PRTFREE
+* Free Another node
+FREE SIXTH
+* #5 Show the three free nodes and the remaining allocated nodes
+PRTALL
+PRTFREE
+* Free the first allocated node and then let's use it to allocate a smaller node 
+FREE FIRST
+PRTALL
+ALLOC 30 10TH 10TH
+* #6 There should now be some free space after "10TH" and before "SECOND"
+PRTALL
+PRTFREE
+* #7 When we Free 8th, it should get combined with the free space that follows it.
+FREE 8TH
+PRTALL
+PRTFREE
+* #8 When we Free SECOND, it should get combined with the preceding free space.
+FREE SECOND
+PRTALL
+PRTFREE
+* #9 When we Free FIFTH, it should get combined with both the preceding and the following
+FREE FIFTH
+* There should be 3 allocated and 3 free areas.  The free should be 125, 155, and 75 bytes.
+PRTALL
+PRTFREE
+*
+RESET 500
+PRTALL
+* #10 Allocate 4 nodes
+ALLOC 100 P2.ONE ONE 100
+ALLOC 100 P2.TWO TWO 100
+ALLOC 100 P2.THREE THREE 100
+ALLOC 100 P2.FOUR FOUR 100
+PRTALL
+* #11 Free P2.TWO
+FREE P2.TWO
+PRTALL
+PRTFREE
+* #12 Allocate something that would leave too small of a FREE area, 
+*     so it increases to a tot of 105
+ALLOC 90 HUNGRY HUNGRY 90
+PRTALL
+PRTFREE
+* #13 Allocate a very small item which should be changed to the minimum size
+ALLOC 6 SMALL SMALL 6
+PRTALL
+PRTFREE
+* #14 Reset the heap again
+RESET 500
+ALLOC 20  P3.ONE ONE 20
+ALLOC 150 P3.TWO TWO 150
+ALLOC 20 P3.THREE THREE 20
+ALLOC 30 P3.FOUR FOUR 30
+ALLOC 80 P3.FIVE FIVE 80
+ALLOC 40 P3.SIX SIX 40
+ALLOC 100 P3.SEVEN SEVEN 100
+PRTALL
+PRTFREE
+FREE P3.FIVE
+FREE P3.THREE
+PRTALL
+PRTFREE
+* #15 FITME shouldn't fit in the first free space
+ALLOC 50 P3.FITME FITME 50
+PRTALL
+PRTFREE
+* The end

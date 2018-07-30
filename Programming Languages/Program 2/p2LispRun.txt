@@ -1,0 +1,17 @@
+;;; p2LispRun.txt
+(skipN '(T I S S U E) 3)
+(skipN '(T I S S U E) 8)
+
+(replaceIn '(P A T T E R) '(T R) 'S)
+
+(insertAfter '(H O H O) 'H 'X)
+(insertAfter '(H O H O) 'W 'X)
+
+(insertNth '(X Y Z) 2 'FUN)
+(insertNth '(X Y Z) 4 'FUN)
+
+(insertAfterAll '(X (X Y X) X Z) 'X 'W)
+(insertAfterAll '((X (X (Y X)) X) Z) 'X 'W)
+
+(atomiclist '(A (B F (H) G) J)) 
+(atomiclist '(L () (I () S) (((P ()))) ))(

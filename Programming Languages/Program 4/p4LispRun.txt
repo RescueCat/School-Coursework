@@ -1,0 +1,136 @@
+;;; p4LispRun.txt for cs3723
+;;; Copyright 2018 Larry W. Clark, this document may not be copied to any other website.
+
+;;; Convert the expressions to WFFs
+
+;;; simple polynomials
+(setf wff1 (wff '(4 X 3) ))
+(setf wff2 (wff '((2 X 3) + (5 x 2) ) ))
+(setf wff3 (wff '((3 X 3) + 5) ))
+(setf wff4 (wff '((4 X 3) + (6 X) ) ))
+(setf wff5 (wff '((5 x 4) + ((3 X 2) + (5 X))) ))
+
+;;; SIN 
+(setf wff6 (wff '(SIN X) ))
+(setf wff7 (wff '( SIN ( 7 X 2) ) ))
+(setf wff8 (wff '( (8 X 3) + (SIN (2 X)) ) ))
+
+;;; diff, product, quotient
+(setf wff9 (wff '( (9 X 4) - (2 X 3)) ))
+(setf wff10 (wff '( (10 X 3) * (5 X 2)) ))
+(setf wff11 (wff '( (11 X 3) / (2 X 1) ) ))
+(setf wff12 (wff '( (12 X 4) * ( (1 X 5) + (2 X 4)) ) ))
+
+;;; more complex
+(setf wff13 (wff '(SIN ( (13 X 2) / (2 X 3)) ) ))
+(setf wff14 (wff '(COS ( 14 X)) ))
+
+;;; others
+(setf wff15 (wff '( (15 X 1) - (15 X)) ))
+(setf wff16 (wff '( ((16 X) + 5) * (4 X)) ))
+
+;;; unary
+(setf wff17 (wff '( - (17 X 2) ) ))
+(setf wff18 (wff '( - (COS ( 18 X)) ) ))
+
+;;; simple?
+(setf wff19 (wff '(19 X) ))
+(setf wff20 (wff '( (20 X 2) - ( 20 x 2)) ))
+(setf wff21 (wff '(-(cos X)) ))
+(setf wff22 (wff '(- (sin (- (22 X 2)))) ))
+(setf wff23 (wff '( (- (23 X 2)) * (- (3 X 3))) ))
+(setf wff24 (wff '(cos (- (24 X 2))) ))
+(setf wff25 (wff '((6 X 3) + (7 X 3) ) ))
+(setf wff26 (wff '((5 x 4) * ((3 X 2) + (5 X 2))) ))
+
+;;; Take the derivatives
+wff1
+(deriv wff1)
+wff2
+(deriv wff2)
+;;; deriv of wff3 has a 0 poly term unless simplified
+wff3
+(deriv wff3)
+wff4
+(deriv wff4)
+wff5
+(deriv wff5)
+
+;;; SIN
+wff6
+(deriv wff6)
+wff7
+(deriv wff7)
+wff8
+(deriv wff8)
+
+;;; difference
+wff9
+(deriv wff9)
+
+;;; product
+wff10
+(deriv wff10)
+
+;;; quotient
+wff11
+(deriv wff11)
+
+;;; more complex product
+wff12
+(deriv wff12)
+
+;;; Chain rule with SIN
+wff13
+(deriv wff13)
+
+;;; COS
+wff14
+(deriv wff14)
+
+;;; wff15 difference x - can be simplified
+wff15
+(deriv wff15)
+
+;;; wff16 product - second product has a poly term of zero - can be simplified
+wff16
+(deriv wff16)
+
+;;; unary
+wff17
+(deriv wff17)
+
+;;; wff18 U- - the resulting product can be simplified (double negative)
+wff18
+(deriv wff18)
+
+;;; simple?
+wff19
+(deriv wff19)
+
+wff20
+(deriv wff20)
+
+;;; wff21 U- U- - can be simplified
+wff21
+(deriv wff21)
+
+;;; wff22 U- - can be simplified
+wff22
+(deriv wff22)
+
+;;; wff23 multiple U- products can be simplified
+wff23
+(deriv wff23)
+
+;;; wff24 U- simplification
+wff24
+(deriv wff24)
+
+;;; wff25 - simplify poly term coeff combination
+wff25
+(deriv wff25)
+;;; wff26 - simplify poly term coeff combination
+wff26
+(deriv wff26)
+'DONE

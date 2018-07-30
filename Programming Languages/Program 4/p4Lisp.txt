@@ -1,0 +1,189 @@
+;;; defun WFF
+;;;    Parameters:
+;;;        inExpr		- The list to be converted to WFF
+;;;    Purpose:
+;;;        Converts an infix-like parenthesized expression to a WFF.
+;;;	   A polynomial term in the form of (3 X 2) needs to be changed to (P 3 X 2).  
+;;;        The term (2 X) needs to be changed to (P 2 X 1).
+;;;        An infix binary operator (g(x) binaryOp h(x)) must be converted to
+;;;        (binaryOp (WFF g(x) ) (WFF (h(x)) ). An infix binary operator (g(x) binaryOp h(x)) 
+;;;        must be converted to(binaryOp (WFF g(x) ) (WFF (h(x)) ). Constants and X don't change.
+(defun WFF (inExpr)
+        (cond           ((atom inExpr) inExpr)
+                        ((numberp (car inExpr))                                                         ;Examin the Car, if it is a number
+                                (cond   ((eql 3 (eCOUNT inExpr))                                        ;If the list is length 3
+                                                (append '(P) inExpr))                                   ;Return P inExpr
+                                        ((eql 2 (eCOUNT inExpr))                                        ;If the list is length 2
+                                                (append '(P) (append inExpr '(1))))                     ;Return P inExpr 1
+                                        (T inExpr)
+                                )
+                        )
+                        ((atom (car inExpr))
+                                (cond ((eql '- (car inExpr)) (list 'U- (WFF (cadr inExpr))))
+                                        (T (list (car inExpr) (WFF (cadr inExpr))))
+                                )
+                        )
+                        (T (list (cadr inExpr)                                                  ;If it's of different form create
+                                (WFF (car inExpr))                                              ;a new list: "binaryOp g(x) h(x)"
+                                (WFF (caddr inExpr)))
+                        )
+        )
+)
+
+;;; defun eCOUNT
+;;;    Parameters:
+;;;        cExpr		- The list to be counted
+;;;    Purpose:
+;;;        Counts the amount of top level elements in a list.
+;;;	   Created to use in tandem with WFF. 
+(defun eCOUNT (cExpr)
+    (cond       ((NULL cExpr) 0)
+                (T (+ 1 (eCOUNT (CDR cExpr))))
+    )
+)
+
+;;; defun DERIV
+;;;    Parameters:
+;;;        inExpr		- The WFF expression to be derived
+;;;    Purpose:
+;;;        DERIV which makes the derivative list for any WFF
+;;;	   A derivative of a constant is 0. The derivative of a 
+;;;	   WFF function is determined by calling the appropriate derivative 
+;;;        function. DERIV will need to use HGET to get the derivative   
+;;;        function name and then use EVAL to evaluate it on an appropriate expression.
+(defun DERIV (inExpr)
+                        ;If it's an atom & it's just a number, return 0
+        (cond           ((atom inExpr)(cond ((numberp inExpr) 0)))
+                        ;else use given functions to determine the
+                        ;appropriate derivative function to call.
+                        (T (eval `( , (HGET (car inExpr)) ' , (CDR inExpr))))
+        )
+)
+
+;;; defun DER_P
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Power and Constant Rule 
+;;;    Purpose:
+;;;        Returns the derivative of a Power or Constant expression.
+;;;	   Mathematically [g(x) = cXn] becomes [g'(x) = cnX^(n-1)]
+(defun DER_P (inExpr)
+        (cond   ((atom inExpr) inExpr)
+                ;If the last element is 0 return 0
+                ((eql 0 (caddr inExpr)) 0)
+                ;If the last element is 1 return the first element
+                ((eql 1 (caddr inExpr)) (car inExpr))
+                ;else use the power and constant rule
+                (T (list 'P (* (caddr inExpr) (car inExpr)) 'X (1- (caddr inExpr))))
+        )
+)
+
+;;; defun DER_+
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Sum Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Sum expression.
+;;;	   Mathematically [g(x) + h(x)] becomes [g'(x) + h'(x)]
+(defun DER_+ (inExpr)
+        (setf temp (list '+ (DERIV (car inExpr)) (DERIV (cadr inExpr))))        ;build the list for sum rule
+        (cond   ((eql 0 (cadr temp)) (caddr temp))                              ;If the firs element is 0 return just the last (not including +)
+                ((eql 0 (caddr temp)) (cadr temp))                              ;If the last element is 0 return just the first
+                (T temp)                                                        ;otherwise return the entire list
+        )
+)
+
+;;; defun DER_-
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Difference Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Difference expression.
+;;;	   Mathematically [g(x)  h(x)] becomes [g'(x)  h'(x)]
+(defun DER_- (inExpr)
+        (setf temp (list '- (DERIV (car inExpr)) (DERIV (cadr inExpr))))        ;build the list for difference rule
+        (cond   ((equal(cadr temp) (caddr temp)) 0)                             ;check for none zero print
+                ((eql 0 (cadr temp)) (list 'U- (cadr temp)))                    ;if the first element is 0 create negative list
+                ((eql 0 (caddr temp)) (cadr temp))                              ;if the last element is 0 return just the first
+                (T temp)                                                        ;otherwise return list
+    )
+)
+
+;;; defun DER_U-
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Unary Minus Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Unary Minus expression.
+;;;	   Mathematically [- g(x)] becomes [- g'(x)]
+(defun DER_U- (inExpr)
+        (setf temp (list 'U- (DERIV (car inExpr))))                             ;build the list for unary minus rule
+        (cond   ((eql 0 (cadr temp)) 0)                                         ;if the first element is zero return 0
+                ((numberp (cadr temp)) temp)                                    ;if the first element is a number return the list
+                ((eql (car temp) (caadr temp)) (cadadr temp))                   ;
+                (T temp)
+        )
+)
+
+;;; defun DER_/
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Quotient Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Quotient expression.
+;;;	   Mathematically [g(x) / h(x)] becomes [g'(x)h(x)-g(x)h'(x) / (h(x))^2]
+(defun DER_/ (inExpr)
+        (setf temp (list '/ (list '- (list '* (DERIV (car inExpr))(cadr inExpr))        ;build list for quotient rule
+                                        (list '*(car inExpr)(DERIV (cadr inExpr))))
+                                        (list '* (cadr inExpr)(cadr inExpr)))
+        )
+        (cond   ((and (eql 0 (list '* (car inExpr) (DERIV (cadr inExpr))))              ;check both sides for zero, return zero
+                        (eql 0 (list '* (DERIV (car inExpr)) (cadr inExpr)))) 0)
+                (T temp)                                                                ;otherwise return list
+        )
+)
+
+;;; defun DER_*
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Product Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Product expression.
+;;;	   Mathematically [g(x) * h(x)] becomes [g(x)h'(x) + g'(x)h(x)]
+(defun DER_* (inExpr)
+        (setf temp      (list '+ (list '* (DERIV (car inExpr))(cadr inExpr))            ;build list for product rule
+                                        (list '* (car inExpr)(DERIV (cadr inExpr))))
+        )
+        (cond   ((and (eql 0 (list '* (car inExpr) (DERIV (cadr inExpr))))              ;check both sides for zero, return zero
+                        (eql 0 (list '* (DERIV (car inExpr)) (cadr inExpr)))) 0)
+                (T temp)                                                                ;return list otherwise
+        )
+)
+
+;;; defun DER_COS
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Cosine Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Cosine expression.
+;;;	   Mathematically [COS (x)] becomes [-SIN(x)]
+(defun DER_COS (inExpr)
+        (setf temp (DERIV (car inExpr)) )                                       ;build list for cos
+        (cond   ((and (not (atom temp)) (eql 'U- (car temp)))                   ;build postive if negative
+                        (list 'SIN (cadr temp)) )
+                (T  (list 'U- (list 'SIN temp)) )                               ;build negative if postive
+        )
+)
+
+;;; defun DER_SIN
+;;;    Parameters:
+;;;        inExpr		- The list to be processed using Sine Rule
+;;;    Purpose:
+;;;        Returns the derivative of a Sine expression.
+;;;	   Mathematically [SIN(x)] becomes [COS(x)]
+;;;	   and chain rule states that [SIN(P(x))] becomes [COS(P(x)) * g'(x)]
+(defun DER_SIN (inExpr)
+        (setf temp (DERIV (car inExpr)) )                                       ;build list for sin
+        (cond   ((atom (car inExpr))
+                        (setf temp (DERIV (car inExpr)) )
+                        (list 'COS (car inExpr))
+                )
+                ((and (not (atom temp)) (eql 'U- (car temp)))
+                        (list '* (list 'U- (list 'COS (cadar inExpr)))temp)
+                )
+                (T (list '* (list 'COS (car inExpr))temp))
+    )
+)

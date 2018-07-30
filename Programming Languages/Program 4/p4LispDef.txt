@@ -1,0 +1,34 @@
+;;; p4LispDef.txt for cs3723
+;;; Copyright 2018 Larry W. Clark, this document may not be copied to any other website.
+
+;;; HADD
+;;;    Parameters:
+;;;        atm - function name
+;;;        value - derivative function name
+;;;    Purpose:
+;;;        Inserts an entry in the DERIV-HT for the specified
+;;;        atm and value.
+(defun HADD (atm value )
+    (setf (gethash atm DERIV-HT) value)
+)
+    
+;;; HGET
+;;;    Parameters: 
+;;;        atm - function name
+;;;    Purpose:
+;;;        Returns the value for atm as the key in the 
+;;;        DERIV-HT
+(defun HGET (atm )
+    (gethash atm DERIV-HT)
+)
+
+;;; Define the derivative function for each WFF function
+(setf DERIV-HT (make-hash-table))
+(HADD 'p   'der_p )
+(HADD '+   'der_+ )
+(HADD '-   'der_-)
+(HADD 'U-  'der_U-)
+(HADD '*   'der_*)
+(HADD '/   'der_/ )
+(HADD 'sin 'der_sin)
+(HADD 'cos 'der_cos)
