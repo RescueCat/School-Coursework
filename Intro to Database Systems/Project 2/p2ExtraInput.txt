@@ -1,0 +1,100 @@
+* CS3743 p1Input.txt
+* Nuke the Hash file if it exists
+NUKE BOOK book.dat
+* Opening of a non-existent file should cause an error
+OPEN BOOK book.data
+* Create the hash file
+CREATE BOOK book.dat 19
+DUMP BOOK book.dat
+* Creating it again should cause an existence error
+CREATE BOOK book.dat 17
+* Open it
+OPEN BOOK book.dat
+* #1 Insert some books
+INSERT BOOK JOYPGM001,The Joys of Programming,TECH,PGMING,100
+DUMP BOOK book.dat
+INSERT BOOK PYTHON001,Learn Python Without Getting Bit,S PRESS,PGMING,200
+DUMP BOOK book.dat
+INSERT BOOK SQLDBB001,Making Your DB Queries SQueeL,XYZ,DB,300
+INSERT BOOK TECHDR001,My Technical Dream Job,TECH,PGMING,400
+INSERT BOOK PERLLL001,Is PERL the Jewel of Programming,S PRESS,PGMING,500
+DUMP BOOK book.dat
+* #2 Read an existing book
+READ BOOK TECHDR001
+* #3 Read should not find this one
+READ BOOK JAVADD001
+* #4 Insert an existing book - should cause an error
+INSERT BOOK TECHDR001,My Technical Dream Job Again,TECH,PGMING,444
+READ BOOK TECHDR001
+* #5 Insert some books and some synonyms
+INSERT BOOK JAVADD001,Java Isn't an Addiction,S PRESS,PGMING,600
+INSERT BOOK LINUXX004,Learning Linux,XYZ,OS,700
+INSERT BOOK COBOLL001,How Your Grandpa Coded in COBOL,S PRESS,PGMING,800
+INSERT BOOK EXCELL001,Excel at Excell,MS PRESS,ACCOUNT,200
+INSERT BOOK PRANKS001,Software Pranks,TECH,PGMING,300
+DUMP BOOK book.dat
+* #6 READ one that is on chain
+READ BOOK PRANKS001
+* #7 Insert some more
+INSERT BOOK ARTINT001,A.I. Practical Algorithms,S PRESS,PGMING,400
+INSERT BOOK PYTADW001,Programming in Python,ADWES,PGMING,500
+INSERT BOOK FUNDBS001,Fundamentals of Database Systems,PEARSON,DB,900
+INSERT BOOK COMPILER1,Compilers,PEARSON,PGMING,1100
+DUMP BOOK book.dat
+* #8 Read some that now exist
+READ BOOK ARTINT001
+READ BOOK JAVADD001
+* #9 Read one that doesn't exist
+READ BOOK DSTRUC001
+* #10 Insert some further on the chain
+INSERT BOOK INTROC001,Programming in C,S PRESS,PGMING,120
+INSERT BOOK DSTRUC001,Data Structures in C,S PRESS,PGMING,240
+DUMP BOOK book.dat
+* #11 Read some that are further on a chain
+READ BOOK INTROC001
+* #12 Update one that is in the primary, its next shouldn't change, but pages should be 222
+UPDATE BOOK PYTHON001,Learn Python Without Getting Bit,S PRESS,PGMING,222
+READ BOOK PYTHON001
+* #13 Update a Book that is on a chain
+UPDATE BOOK COMPILER1,Compilers,PEARSON,PGMING,1222
+DUMP BOOK book.dat
+* #14 Delete a Book in the Primary area, it should still have a non-zero next
+DELETE BOOK JAVADD001
+DUMP BOOK book.dat
+* #15 read a book that follows the empty and must be found
+READ BOOK EXCELL001
+* #16 Delete a Book along a synonym chain
+DELETE BOOK PRANKS001
+DUMP BOOK book.dat
+UPDATE BOOK INTROC001,Programming in C,S PRESS,PGMING,150
+READ BOOK INTROC001
+* #17 Also delete the INTROC001 
+DELETE BOOK INTROC001
+DUMP BOOK book.dat
+* #18 insert on that chain ... note that it should be the first synonym
+INSERT BOOK PRANKS001,Software Pranks,TECH,PGMING,300
+DUMP BOOK book.dat
+* #19 create a long synonym chain
+INSERT BOOK FUNDBS010,Fundamentals of Database Systems 2,PEARSON,DB,950
+INSERT BOOK FUNDBS100,Fundamentals of Database Systems 3,PEARSON,DB,1100
+INSERT BOOK DBFUNS001,Database Fun Vol 1,PEARSON,DB,600
+INSERT BOOK DBFUNS010,Database Fun Vol 2,PEARSON,DB,700
+INSERT BOOK DBFUNS100,Database Fun Vol 3,PEARSON,DB,800
+DUMP BOOK book.dat
+* #20 Delete three books on the chain
+DELETE BOOK FUNDBS001
+DELETE BOOK FUNDBS100
+DELETE BOOK DBFUNS010
+DUMP BOOK book.dat
+* #21 update the book at the end of the chain
+UPDATE BOOK DBFUNS100,Database Fun Vol 3,PEARSON,DB,800
+* #22 update a book that is not on the chain - error
+UPDATE BOOK DBFUNS010,Database Fun Vol 2,PEARSON,DB,700
+* #23 insert a book that is already there
+INSERT BOOK DBFUNS100,Database Fun Vol 3,PEARSON,DB,800
+* #24 insert a book, placing it in the primary
+INSERT BOOK DBFUNS010,Database Fun Vol 2,PEARSON,DB,700
+DUMP BOOK book.dat
+* #25 insert another book into that chain, replacing an empty
+INSERT BOOK DBSFUN001,DB Fun Does End,PEARSON,DB,700
+DUMP BOOK book.dat

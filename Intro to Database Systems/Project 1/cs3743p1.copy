@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include "cs3743p1.h"
+
+
+/*This function creates a hash file containing only the HashHeader record.
+If the file already exists, return RC_FILE_EXISTS
+Create the binary file by opening it.
+Set pHashHeader->iHighOverflowRBN to the value of pHashHeader->iNumPrimary
+Write the HashHeader record to the file at RBN 0.
+fclose the file.*/
+int hashCreate(char szFileNm[], HashHeader *pHashHeader)
+{
+        FILE *writeFile;
+
+        // Open binary file for write
+        if (writeFile = fopen(szFileNm, "rb+"))
+        {
+                fclose(writeFile);
+                return RC_FILE_EXISTS;
+        }
+        else
+        {
+                writeFile = fopen(szFileNm, "wb+");
+                if(writeFile == NULL)
+                        return RC_FILE_EXISTS;
+        }
+
+        //Set pHashHeader->iHighOverflowRBN to the value of pHashHeader->iNumPrimary
+        pHashHeader -> iHighOverflowRBN = pHashHeader ->iNumPrimary;
+
+        pHashHeader -> iRecSize = sizeof(Book);
+        int jCount = fwrite(pHashHeader, pHashHeader -> iRecSize, 1L, writeFile);
+        if(jCount != 1)
+                printf("Write fail\n");
+        fclose(writeFile);
+        return 0;
+}
+
+/*This function opens an existing hash file which must contain a HashHeader record and returns a file pointer to it.
+Use fopen to open the file.  If it doesn't exist, return NULL.
+Use fread to read the HashHeader record and return it through the parameter.  If the read fails, return NULL.
+Return the opened FILE pointer as the function value when successful.*/
+FILE *hashOpen(char szFileNm[], HashHeader *pHashHeader)
+{
+
+        FILE *fileRead;
+
+        //open file for reading        
+        if (fileRead = fopen(szFileNm, "rb+"))
+        {
+                //return pHashHeader and return the file pointer
+                int jCount = fread(pHashHeader, pHashHeader -> iRecSize, 1L, fileRead);
+                if(jCount != 1)
+                {
+                        printf("No header\n");
+                        return NULL;
+                }
+                return fileRead;
+        }
+        else
+        {
+                return NULL;
+        }
+}
+
+int readRec(FILE *pFile, int iRBN, void *pRecord, int iRecSize)
+{       
+        //Calculate RBA : Record# * Record Size = Position of Record
+        int RBA = iRBN * iRecSize;
+        //Seek to position
+        fseek(pFile, RBA, SEEK_SET);
+        fread(pRecord, iRecSize, 1L, pFile);
+        rewind(pFile);
+        if(pRecord == NULL)
+                return RC_LOC_NOT_FOUND;
+        else
+                return RC_OK;
+        
+}
+
+int writeRec(FILE *pFile, int iRBN, void *pRecord, int iRecSize)
+{}
+
+int bookInsert(FILE *pFile, HashHeader *pHashHeader, Book *pBook)
+{}
+
+int bookRead(FILE *pFile, HashHeader *pHashHeader, Book *pBook)
+{}

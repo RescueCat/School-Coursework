@@ -1,0 +1,35 @@
+* CS3743 p1Input.txt
+* Nuke the Hash file if it exists
+NUKE BOOK book.dat
+* Opening of a non-existent file should cause an error
+OPEN BOOK book.data
+* Create the hash file
+CREATE BOOK book.dat 19
+DUMP BOOK book.dat
+* Creating it again should cause an existence error
+CREATE BOOK book.dat 17
+* Open it
+OPEN BOOK book.dat
+* Insert some books
+INSERT BOOK JOYPGM001,The Joys of Programming,TECH,PGMING,100
+DUMP BOOK book.dat
+INSERT BOOK PYTHON001,Learn Python Without Getting Bit,S PRESS,PGMING,200
+DUMP BOOK book.dat
+INSERT BOOK SQLDBB001,Making Your DB Queries SQueeL,XYZ,DB,300
+INSERT BOOK TECHDR001,My Technical Dream Job,TECH,PGMING,400
+DUMP BOOK book.dat
+* Read an existing book
+READ BOOK TECHDR001
+* Read should not find this one
+READ BOOK JAVADD001
+* Insert an existing book - should cause an error
+INSERT BOOK TECHDR001,My Technical Dream Job Again,TECH,PGMING,444
+READ BOOK TECHDR001
+* Insert more books; however, some will have synonyms.
+INSERT BOOK PERLLL001,Is PERL the Jewel of Programming,S PRESS,PGMING,500
+INSERT BOOK JAVADD001,Java Isn't an Addiction,S PRESS,PGMING,600
+INSERT BOOK LINUXX004,Learning Linux,XYZ,OS,700
+INSERT BOOK COBOLL001,How Your Grandpa Coded in COBOL,S PRESS,PGMING,800
+INSERT BOOK EXCELL001,Excel at Excell,MS PRESS,ACCOUNT,200
+INSERT BOOK PRANKS001,Software Pranks,TECH,PGMING,300
+DUMP BOOK book.dat
