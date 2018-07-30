@@ -1,0 +1,1 @@
+> One coding project was given to be done over the entirety of the semester. The goal of the project was to create a program using C and inline assembly to encrypt and decrypt text files using simple methods. 
