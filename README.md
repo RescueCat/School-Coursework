@@ -11,3 +11,6 @@
 
 **Application Programming** (CS 3443 | Spring 2017): *JAVA*
 >Advanced application development in a current object-oriented language. Introduction to the software life cycle, best programming practices, and modern development tools.
+
+**Computer Organization** (CS 3843 | Spring 2017): *Assembly (Intel Syntax)*
+>Organization of a computer system is introduced at block diagram level. Programming in assembly language and understanding the macroarchitecture of a computer is emphasized. Fundamentals of digital systems are introduced and the designs of various components used are investigated. 
