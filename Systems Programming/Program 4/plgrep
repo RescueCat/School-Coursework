@@ -1,0 +1,88 @@
+#!/usr/bin/perl 
+
+use File::Find
+my @ARGV;
+my @dirm;
+my @dirml;
+my @files;
+my @filem;
+my @matchl;
+my @finalfm;
+my @finalln;
+
+#handle -l
+if ($ARGV[0] eq "-l") #handling -l
+{
+        $handle = shift @ARGV;
+}
+
+#Make variable for Regular Expression and remove it from array.
+my $regex = $ARGV[0];
+shift @ARGV;
+
+#Loop through directories
+find(\&push_to_array,@ARGV);
+sub push_to_array
+{
+        if (-f $_)
+        {
+                open (my $thing, "<" ,$_) or die "Can't open";
+                while(my $lins = <$thing>)
+                {
+                        if ($lins =~ /$regex/)
+                        {
+                                push(@dirm,"$_\n");
+                                push(@dirml,"$_: $lins\n");
+                        }
+                }
+                close $_;
+        }
+}
+
+#loop through files
+#get files (only) from command line
+for(my $i = 0; $i < @ARGV; $i++)
+{
+        $chk = substr($ARGV[$i],0,1);
+        if ($chk ne "/")
+        {
+		push (@files,$ARGV[$i]);
+        }
+}
+#get files with only regex in them
+for(my $j = 0; $j < @files; $j++) #if a file matches the regex, consider match
+{
+       open (my $file,'<', $files[$j]) or die "Can't open file.\n";
+       while (my $line = <$file>)
+       { #loop through each line to find match
+		if($line =~ /$regex/)
+                {
+                       push (@filem, "$files[$j]\n"); #push name to match array
+                       push (@matchl, "$files[$j]: $line\n"); #push 'filename: line' if needed later
+                }
+        }
+        close($file);
+}
+
+#Remove dupes
+sub uniq
+{
+        my %seen;
+        grep !$seen{$_}++,@_;
+}
+@dirm = uniq(@dirm);
+@dirml = uniq(@dirml);
+@filem = uniq(@filem);
+@matchl = uniq(@matchl);
+@myfinalfm = uniq(@dirm,@filem);
+@myfinalln = uniq(@dirml, @matchl);
+
+#printing
+if ($handle eq "-l") #print file per line
+{
+	print "@myfinalfm"
+}
+else
+{
+        print "@myfinalln";
+}

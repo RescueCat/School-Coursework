@@ -1,0 +1,157 @@
+#!/usr/bin/perl -X
+
+use List::MoreUtils qw(uniq);
+use File::Find
+
+my @ARGV; 
+my %hash1;
+my %hash2;
+my (@a,@b,@c,@d);
+my $switch;
+
+#hanle '-[a-z]' switch
+if ($ARGV[0] ~~ /^[a-zA-Z-]/)
+{
+	$switch = shift @ARGV;
+}
+else
+{
+	$switch = "z";
+}
+
+#define directories
+my @dir1 = $ARGV[0];
+my @dir2 = $ARGV[1];
+
+#Use File::Find to store file names and their paths to hashes.
+find (\&files1, @dir1);
+find (\&files2, @dir2); 
+sub files1 
+{ 	#Will store subject ($_) into hash, only if file.
+	#Will save file name ($_) as key, and path to file as value.
+	if(-f $_) 
+	{	#$File::Find::name - returns full path to file 
+		$hash1{$_} = $File::Find::name; 
+	} 
+}
+sub files2
+{	#same for dir2
+	if(-f $_)
+	{
+		$hash2{$_} = $File::Find::name;
+	}
+}
+#Make a list with non dupes
+my @all = uniq(keys %hash1, keys %hash2);
+
+#Find if same file in directory
+for my $file (@all)
+{
+	my $results;
+	if ($hash1{$file} && $hash2{$file})
+	{
+		$results = qx(/usr/bin/diff $hash1{$file} $hash2{$file});
+		if ($results ~~ /[a-zA-Z0-9]/)
+		{
+			push (@c,"< $file >\n");	
+		}
+		else
+		{	
+			push(@d,"> $file <\n");
+		}
+	}
+	elsif($hash1{$file})
+	{
+		push(@a, "<<< $file\n");
+	}
+	else
+	{
+		push(@b, ">>> $file\n");
+	}
+}	
+
+#Printing requirements -______-
+if ($switch ~~ /1/ && $switch ~~ /2/ && $switch ~~ /d/ && $switch ~~ /s/)
+	{
+		print "@a\n";
+		print "@b\n";
+		print "@c\n";
+		print "@d\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /d/ && $switch ~~ /s/)
+	{
+		print "@a\n";
+		print "@c\n";
+		print "@d\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /2/ && $switch ~~ /s/)
+	{		
+		print "@a\n";
+		print "@b\n";
+		print "@d\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /2/ && $switch ~~ /d/)
+	{
+		print "@a\n";
+		print "@b\n";
+		print "@c\n";
+	}
+elsif ($switch ~~/s/ && $switch ~~ /2/ && $switch ~~ /d/)
+	{
+		print "@d\n";
+		print "@a\n";
+		print "@c\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /2/)
+	{
+		print "@a\n";
+		print "@b\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /d/)
+	{
+		print "@a\n";
+		print "@c\n";
+	}
+elsif ($switch ~~/1/ && $switch ~~ /s/)
+	{
+		print "@a\n";
+		print "@d\n";
+	}
+elsif ($switch ~~/2/ && $switch ~~ /d/)
+	{
+		print "@b\n";
+		print "@c\n";
+	}
+elsif ($switch ~~/2/ && $switch ~~ /s/)
+	{
+		print "@b\n";
+		print "@d\n";
+	}
+elsif ($switch ~~/d/ && $switch ~~ /s/)
+	{
+		print "@d\n";
+		print "@c\n";
+	}
+elsif ($switch ~~/1/)
+	{
+		print "@a\n";
+	}
+elsif ($switch ~~/2/)
+	{
+		print "@b\n";
+	}
+elsif ($switch ~~/d/)
+	{
+		print "@c\n";
+	}
+elsif ($switch ~~/s/)
+	{
+		print "@d\n";
+	}
+else 
+	{
+		print "@a\n";
+		print "@b\n";
+		print "@c\n";
+		print "@d\n";
+	}

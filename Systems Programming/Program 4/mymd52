@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+
+my $dir = $ARGV[0];
+
+open($in, "<", $dir) or die "Can't open rootfile: $!";
+
+my @arrMd;
+my @lines = <$in>;
+my $arrSize = @lines;
+my $counter = 0;
+my @forwrite;
+
+for ($i = 0; $i < $arrSize; $i++)
+{
+        $tmp = $lines[$i];
+        $themd = `md5sum $tmp`;
+        $arrMd[$i] = $themd;
+}
+
+close($in);
+
+for my $elem (@arrMd)
+{
+        my($jstMd,$jstDr) = split " ", $elem;
+        if($ARGV[1] eq undef)
+        {
+                print "$jstDr        $jstMd\n";
+        }
+        else
+        {
+                $forwrite[$counter] = "$jstDr        $jstMd\n";
+                $counter++;
+        }
+}
+my $file = $ARGV[1];
+
+open($file, ">>", "$file") or die "Can't open rootfile: $!";
+if($#ARGV == 1)
+        {
+                print $file @forwrite;
+        }
+close($file);
+

@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+
+use File::Find
+my @ARGV;
+my @dirm;
+my @dirml;
+
+find(\&push_to_array,@ARGV);
+
+sub push_to_array
+{
+	#print "$_ is a file\n" if -f;
+	
+	if (-f $_)
+	{
+		open (my $thing, "<" ,$_) or die "Can't open";
+		
+		while(my $lins = <$thing>)
+		{
+			if ($lins =~ /cs3423/)
+			{
+				push(@dirm,$_);
+				push(@dirml,"$_: $lins\n");	
+			}
+		}
+
+		close $_;
+	}
+}
+print "@dirml";
+print "@dirm";

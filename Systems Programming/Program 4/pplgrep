@@ -1,0 +1,105 @@
+#!/usr/bin/perl
+ 
+use File::Find;
+my @ARGV;
+my @dirt;
+my @files;
+my @myfilem;
+my @dirmatch;
+my @fdir;
+my @dirm;
+my @dirml;
+my @matchl;
+my $handle;
+
+if ($ARGV[0] eq "-l") #handling -l
+{
+	$handle = shift @ARGV;
+}
+
+my $regex = $ARGV[0];
+
+
+#seperate files and directories
+for(my $i = 1; $i < @ARGV; $i++)
+{
+	$chk = substr($ARGV[$i],0,1);
+
+	if ($chk eq "/")
+	{
+		push (@dirt, $ARGV[$i]);
+	}
+	else
+	{
+		push (@files, $ARGV[$i]);
+	}
+}
+print "@dirt";
+
+
+#loop through files
+for(my $i = 0; $i < @files; $i++) #if a file matches the regex, consider match
+{
+	open (my $fh,'<', $files[$i]) or die "Can't open file.\n";
+	while (<$fh>)
+	{ #loop through each line to find match
+		my $line = $_;
+		if($line =~ /$regex/)
+		{
+			push (@myfilem, $files[$i]); #push name to match array
+			push (@matchl, "$files[$i]: $line"); #push 'filename: line' if needed later
+		}
+	}
+	close($fh);
+}
+
+#loop through directories
+find(\&push_to_array,@ARGV);
+
+sub push_to_array
+{
+        #print "$_ is a file\n" if -f;
+
+        if (-f $_) #if the file is a "file" and not a direcrtory
+        {
+                open (my $thing, "<" ,$_) or die "Can't open";
+
+                while(my $lins = <$thing>)
+                {
+                        if ($lins =~ /cs3423/)
+                        {
+                                push(@dirm,$_);
+                                push(@dirml,"$_: $lins\n");
+                        }
+                }
+
+                close $_;
+        }
+}
+
+#filter dups
+sub uniq
+{
+	my %seen;
+	grep !$seen{$_}++,@_;
+}
+@myfilem = uniq(@myfilem);
+@dirml = uniq(@dirml);
+#print instructions
+if ($handle =~ /-l/) #print file per line
+{
+	for(my $i = 0; $i < @myfilem; $i++)
+	{
+		print "$myfilem[$i]\n";
+	}
+	for(my $i = 0; $i < @dirml; $i++)
+	{
+		print "$dirml[$i]\n";	
+	}
+	
+	
+}
+else
+{
+	print "@matchl";
+}
