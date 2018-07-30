@@ -1,0 +1,20 @@
+1. List all of the people that you have collaborated with on this assignment. For each person indicate the level of collaboration (small, medium, large). Also write a few sentences describing what was discussed. Indicate whether you were mainly giving help or receiving help. 
+	Worked alone on this one.
+
+2. Do you think everything you did is correct? ..... 
+	Yes
+
+3. If not, give a brief description of what is working and what progress was made on the part that is not working. 
+	Everything works as intended.
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.): 
+	Everything was pretty easy to put together, just took a little bit of time to do.
+
+5. Program output: (if you print anything on the screen, then copy/paste it here. don't copy/paste output files here)
+	fox02:~/CS3733/assign1> runalla
+	fox02:~/CS3733/assign1> ls -l fcfsa.all
+		-rw------- 1 omu075 students 124000015 Sep 24  2017 fcfsa.all
+	fox02:~/CS3733/assign1> wc fcfsa.all
+  		2000001   2000003 124000015 fcfsa.all
+	fox02:~/CS3733/assign1> md5sum fcfsa.all
+		dff74ba5472a89240a06d377641c00b1  fcfsa.all

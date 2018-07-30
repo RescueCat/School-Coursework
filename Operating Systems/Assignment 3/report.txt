@@ -1,0 +1,21 @@
+1. List all of the people that you have collaborated with on this assignment. For each person indicate the level of collaboration (small, medium, large). 
+Also write a few sentences describing what was discussed. Indicate whether you were mainly giving help or receiving help. 
+	No collaboration.
+
+2. Do you think everything you did is correct? ..... 
+	Yes except for part3, i could not get it to function properly.
+
+3. If not, give a brief description of what is working and what progress was made on the part that is not working. 
+	Everything in the main parts (1 & 2) work. 
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.): 
+	none
+
+5. Program output: (if you print anything on the screen, then copy/paste it here. don't copy/paste output files here)
+	md5sum for outputs:
+fox01:~/CS3733/assign3> md5sum output-part1 output-part2
+			862810565ecf9d928c1b2ffd873ecbeb  output-part1
+			c95b27848ae8d4354d87678d075001f7  output-part2
+
+	total page faults for part 2:
+			Total page faults: 3210

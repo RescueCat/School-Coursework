@@ -1,0 +1,25 @@
+1. List all of the people that you have collaborated with on this assignment. For each person indicate the level of collaboration (small, medium, large). Also write a few sentences describing what was discussed. Indicate whether you were mainly giving help or receiving help. 
+	No collaboration
+
+2. Do you think everything you did is correct? ..... 
+	Everything works as intended
+
+3. If not, give a brief description of what is working and what progress was made on the part that is not working. 
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.): 
+	No issues just several limitations because of time constraints (none of which were assignment requirements):
+		echo back balance to client from server to reflect current balance
+		show if deposit/withdrawal is outside of min/max range client side (shows up on server side)
+		proper exit command (enter twice was as good as i could get)
+
+5. Explain how do you handle the synchronization of threads in servers to update the account balance; 
+	When the account balance is updating, that is when the thread/process is in it's critical section, so I created a mutex lock that only allows one thread at a time to update the balance. i.e.:
+	 				//Lock Mutex Critical Section
+                                        pthread_mutex_lock(g_mutex);
+
+                                        //Critical Section for Deposits  
+                                        *Balance = (int)*Balance + DepM;
+                                        printf("New balance %d \n", (int)*Balance);
+
+                                        //Unlock Mutex
+                                        pthread_mutex_unlock(g_mutex);

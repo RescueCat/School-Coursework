@@ -1,0 +1,20 @@
+fox01:~/CS3733/assign0> driver1 4 3 5
+Please enter an integer for array x: 4
+Please enter an integer for array x: 8
+Please enter an integer for array x: s
+Only input integers...
+5
+Please enter an integer for array x: 1
+Please enter a double for array y: 12.2
+Please enter a double for array y: 2.3
+Please enter a double for array y: 5.s
+Only input type double...
+5.3
+Please enter a line of text for array z: Hello
+Please enter a line of text for array z: my
+Please enter a line of text for array z: name
+Please enter a line of text for array z: is
+Please enter a line of text for array z: Jon
+The biggest integer was 8!
+The biggest line was Hello
+

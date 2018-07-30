@@ -1,0 +1,11 @@
+1. List all of the people that you have collaborated with on this assignment. For each person indicate the level of collaboration (small, medium, large). Also write a few sentences describing what was discussed. Indicate whether you were mainly giving help or receiving help. 
+	I worked with no one on this assignment.
+
+2. Do you think everything you did is correct? 
+	Everything I finished works as intended and meets the specifications outlined on the assingment page. (http://www.cs.utsa.edu/~dzhu/cs3733/assignments/assign0.html)
+
+3. If not, give a brief description of what is working and what progress was made on the part that is not working.
+	Everything except my function for comparing doubles works. For some reason instead of keeping the largest double value it keeps the last double value inserted. I kept the line about "largest double is" out of the final report but the doubles do store to the array (checked using print statements) properly.
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.):
+	Easy solutions for such a long assignment. 

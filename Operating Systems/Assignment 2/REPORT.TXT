@@ -1,0 +1,30 @@
+1. List all of the people that you have collaborated with on this assignment. For each person indicate the level of collaboration (small, medium, large). 
+Also write a few sentences describing what was discussed. Indicate whether you were mainly giving help or receiving help. 
+	No collaboration.
+
+2. Do you think everything you did is correct? ..... 
+	Yes
+	
+3. If not, give a brief description of what is working and what progress was made on the part that is not working. 
+	Everything working as intended
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.): 
+	No comments
+5. Program output: ((if you print anything on the screen, then copy/paste it here. don't copy/paste output files here)
+fox01:~/CS3733/assign2> ls -l *.all
+-rw------- 1 omu075 students 44344515 Oct 13 11:30 fcfs.all
+-rw------- 1 omu075 students 42868923 Oct 13 11:30 psjf.all
+-rw------- 1 omu075 students 45598078 Oct 13 11:30 rr.all
+-rw------- 1 omu075 students 43290824 Oct 13 11:30 sjf.all
+fox01:~/CS3733/assign2> wc *.all
+  2000001   2000003  44344515 fcfs.all
+  2000001   2000003  42868923 psjf.all
+  2000001   2000003  45598078 rr.all
+  2000001   2000003  43290824 sjf.all
+  8000004   8000012 176102340 total
+fox01:~/CS3733/assign2> md5sum *.all
+4d60a81fbdc170024057fd21d1bf3743  fcfs.all
+0460ce8768432cc4797310783561aec4  psjf.all
+e36a98640697ca62512533d9103252cc  rr.all
+ee2cf6d6a7ad208e043fb5095ea26dce  sjf.all
+

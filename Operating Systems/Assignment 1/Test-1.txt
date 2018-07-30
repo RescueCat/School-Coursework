@@ -1,0 +1,8 @@
+Assignment 1 program written by Jonathan Houston
+inputs: 3 8 7 3 6 3 2 
+
+Part0
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwrRR
+0 9 4.5 0.95000
+
