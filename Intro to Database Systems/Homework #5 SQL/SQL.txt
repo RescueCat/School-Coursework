@@ -1,0 +1,193 @@
+1.
+mysql> select f.flightId, f.airline, f.depTm
+    -> from Flight f
+    -> where orig = "SAT" and dest = "MCO";
++----------+----------+----------+
+| flightId | airline  | depTm    |
++----------+----------+----------+
+| 331      | PoDunk   | 10:00:00 |
+| 341      | PoDunk   | 10:00:00 |
+| 510      | American | 10:30:00 |
+| 519      | PoDunk   | 16:00:00 |
+| 705      | Clampett | 04:00:00 |
++----------+----------+----------+
+5 rows in set (0.00 sec)
+
+2. 
+mysql> select f.flightNm, f.depTm, f.orig
+    -> from Flight f, Customer c, Reservation r
+    -> where c.name = "Perry Noid"
+    -> and c.custNr = r.custNr
+    -> and f.flightId = r.flightId;
++----------+----------+------+
+| flightNm | depTm    | orig |
++----------+----------+------+
+| PD001    | 10:00:00 | SAT  |
+| SH100    | 07:00:00 | IHC  |
+| F333     | 16:00:00 | SAT  |
++----------+----------+------+
+3 rows in set (0.00 sec)
+
+3.
+mysql> select f.airline
+    -> from Flight f, Customer c, Reservation r
+    -> where c.name = "Anita Vacay"
+    -> and c.custNr = r.custNr
+    -> and f.flightId = r.flightId
+    -> and orig = "SAT"
+    -> and schedDt = "2018-03-03";
++---------+
+| airline |
++---------+
+| PoDunk  |
++---------+
+1 row in set (0.00 sec)
+
+4.
+mysql> select c.custNr, c.name
+    -> from Flight f, Customer c, Reservation r, Reservation r2
+    -> where c.custNr != "444"
+    -> and r2.custNr = "444"
+    -> and r2.flightId = f.flightId
+    -> and f.schedDt = "2018-04-04"
+    -> and r2.flightId = r.flightId 
+    -> and c.custNr = r.custNr;
++--------+-------------+
+| custNr | name        |
++--------+-------------+
+|    111 | Perry Noid  |
+|    222 | Melba Toast |
+|    333 | Pete Moss   |
+|    480 | Anita Vacay |
++--------+-------------+
+4 rows in set (0.00 sec)
+
+5.
+mysql> select c.custNr 
+    -> from Customer c 
+    -> where NOT EXISTS (
+    -> select *
+    -> from Flight f
+    -> where f.dest = "SEG" 
+    -> and NOT EXISTS(
+    -> select *
+    -> from Reservation r 
+    -> where r.flightId = f.flightId 
+    -> and r.custNr = c.custNr));
++--------+
+| custNr |
++--------+
+|    444 |
+|    901 |
+|    999 |
++--------+
+3 rows in set (0.00 sec)
+
+6.
+mysql> select c.name, c.gender, c.birthDt
+    -> from Customer c 
+    -> where NOT EXISTS (
+    -> select *
+    -> from Reservation r
+    -> where r.custNr = c.custNr 
+    -> and NOT EXISTS(
+    -> select *
+    -> from Flight f 
+    -> where r.flightId = f.flightId 
+    -> and f.airline = "Spirit"));
++-----------+--------+------------+
+| name      | gender | birthDt    |
++-----------+--------+------------+
+| Pete Moss | M      | 1992-03-03 |
++-----------+--------+------------+
+1 row in set (0.00 sec)
+
+7.
+mysql> select f.flightNm, f.schedDt
+    -> from Flight f
+    -> where not exists(
+    -> select r.custNr
+    -> from Reservation r
+    -> where r.custNr = "777"
+    -> and r.flightId = f.flightId);
++----------+------------+
+| flightNm | schedDt    |
++----------+------------+
+| PD001    | 2018-03-03 |
+| PD001    | 2018-03-04 |
+| AH100    | 2018-04-01 |
+| AH200    | 2018-04-01 |
+| SH100    | 2018-04-04 |
+| SF200    | 2018-04-12 |
+| F333     | 2018-05-19 |
+| PD002    | 2018-05-03 |
+| AH200    | 2018-06-04 |
+| CL123    | 2018-07-05 |
+| PD002    | 2018-07-06 |
++----------+------------+
+11 rows in set (0.00 sec)
+
+8.
+mysql> select c.name
+    -> from Customer c
+    -> where c.name != "Ron DeVoux"
+    -> and not exists(
+    -> select *
+    -> from  Customer cRD
+    -> where cRD.name = "Ron DeVoux"
+    -> and not exists(
+    -> select * 
+    -> from Reservation rRD
+    -> where rRD.custNr = cRD.custNr
+    -> and not exists(
+    -> select *
+    -> from Reservation r
+    -> where r.flightId = rRD.flightId
+    -> and r.custNr = c.custNr)));
++---------------+
+| name          |
++---------------+
+| Perry Noid    |
+| Melba Toast   |
+| Pete Moss     |
+| Bill Board    |
+| Anita Vacay   |
+| Jerry Tall    |
+| Tom E Gunn    |
+| Bob Wire      |
+| Peg Board     |
+| Al B Tross    |
+| B B Gunn      |
+| Sally Mander  |
+| Marcus Absent |
++---------------+
+13 rows in set (0.01 sec)
+
+9.
+mysql> select c.custNr, c.name, c.preferAirline
+    -> from Customer c
+    -> where not exists(
+    -> select *
+    -> from Reservation r
+    -> where r.custNr = c.custNr
+    -> and not exists(
+    -> select *
+    -> from Flight f
+    -> where f.flightId = r.flightId
+    -> and f.airline <> "Clampett"));
++--------+---------------+---------------+
+| custNr | name          | preferAirline |
++--------+---------------+---------------+
+|    111 | Perry Noid    | Spirit        |
+|    333 | Pete Moss     | Clampett      |
+|    480 | Anita Vacay   | Spirit        |
+|    777 | Bob Wire      | PoDunk        |
+|    888 | Ron DeVoux    | American      |
+|    890 | Ann T Freeze  | American      |
+|    901 | Peg Board     | Delta         |
+|    902 | Al B Tross    | American      |
+|    903 | B B Gunn      | PoDunk        |
+|    904 | Sally Mander  | Delta         |
+|    999 | Marcus Absent | Delta         |
++--------+---------------+---------------+
+11 rows in set (0.00 sec)
