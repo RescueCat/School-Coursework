@@ -1,0 +1,145 @@
+6. Create a log file that will contain the results of your experiments.
+	fox01:~/CS3733/RecF> 	countertest 10 100
+				incthread started: 100
+				incthread started: 100
+				incthread started: 100
+				incthread done
+				incthread done
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				incthread started: 100
+				incthread done
+				Count should be 1000
+				Count is        1000
+	Makes 10 threads, each call increment 100 times to make 1000.
+
+7.Adjust the second command line parameter so that countertest takes a few seconds to run. The value will probably be between 1,000,000 and 10,000,000. Confirm that it is still giving you the correct results and indicate this in your log file by showing the output generated.
+	fox01:~/CS3733/RecF> 	countertest 10 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				Count should be 10000000
+				Count is        10000000
+	Makes 10 threads, each call increment 1,000,000 times to make 10,000,000
+
+8. Remove the synchonization from increment. Do this by commenting out the calls to pthread_mutex_lock and pthread_mutex_unlock. You will need to put in a new return statement. Run countertest again and see if this still gaves the correct answer. If it does, run it several times. What do you conclude? Put your results in the log file.
+	fox01:~/CS3733/RecF> 	countertest 10 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				Count should be 10000000
+				Count is        1887571
+	I think without the mutex_lock the counts are being re-written or possibly over-written in the static count variable.
+
+9.Modify increment... Run the unprotected version again and record the results. Put this in your log file with a comment about why you think you got the result you did.
+
+	fox01:~/CS3733/RecF> 	countertest 10 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				Count should be 10000000
+				Count is        2076743
+	Still getting bad output, storing to temp does not help with the re-writting.
+
+10.Put back the mutex calls inside of increment and run it again. Record the results with a comment in the log file explaining what happeded and why:
+	fox01:~/CS3733/RecF> 	countertest 10 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread started: 1000000
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				incthread done
+				Count should be 10000000
+				Count is        10000000
+	Putting back the mutex_lock now gives us proper output. My assumption is that it stops the re-writting.
+
+13. Run countertest and record the results in the log file. Make several runs and indicate in the log file a typical value of the timing.
+	1. The function_to_time took 1179189 microseconds
+	2. The function_to_time took 1191283 microseconds
+	3. The function_to_time took 1166335 microseconds
+		An average of ~1,178,935 microseconds
+
+14. Comment out the mutex calls in increment and run this again. Put the results in your log file. Calculate the approximate number of microseconds needed for a call to the pair pthread_mutex_lock and pthread_mutex_unlock. Put the results in your log file.
+	1.The function_to_time took 60974 microseconds
+	2.The function_to_time took 60082 microseconds
+	3.The function_to_time took 59162 microseconds
+		An average of ~600,072 microseconds
+	The difference is about 600,000 microseconds, we did 1,000,000 calls so each call was about 1.6 microseconds.
+
+15. The goal of multithreaded programs is to execute faster than singlethreaded programs, but multithreaded programs require synchronization in order to execute correctly, which creates more overhead in the process. But, as long as the multithreaded implementation of a process is faster than it's singlethreaded counter part, the pros outweigh the cons.

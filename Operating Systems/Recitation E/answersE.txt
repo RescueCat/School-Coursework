@@ -1,0 +1,83 @@
+
+Jonathan HoustonA
+	Initial:
+		fox01:~/CS3733/RecE> 	make runchild
+					getsizeschild getsizeschild.c getsizesthread.c
+					Size of getsizesthread.c is 1265
+					Total size is 1265
+					Size of getsizeschild.c is 1091
+	
+6.) Which of the values were reported correctly? Explain why each of the incorrect ones were incorrect.
+	Conclusion:	
+		Both of these files sizes are accurate but the total size is wrong and does not print in expected order
+more than likey it's because we are not using threads correctly:
+		
+		fox01:~/CS3733/RecE> 	ls -l
+					total 36
+					-rwx------ 1 omu075 students 8984 Oct 29 18:17 getsizeschild
+					-rw-r--r-- 1 omu075 students 1091 Oct 29 18:12 getsizeschild.c <
+					-rwx------ 1 omu075 students 9090 Oct 29 18:17 getsizesthread
+					-rw-r--r-- 1 omu075 students 1265 Oct 29 18:13 getsizesthread.c <
+					-rw-r--r-- 1 omu075 students  438 Oct 29 18:17 makefile
+
+7.) How would the answer above change if the parent waited for the child before using the results?
+	
+	Code added for simulation:
+		static int status = 0;
+		waitpid(childpid, &status, 0); // parent will now wait for child before using result.
+	
+	After execution:	
+		fox01:~/CS3733/RecE> 	make runchild
+					getsizeschild getsizeschild.c getsizesthread.c
+					Size of getsizeschild.c is 1146
+					Size of getsizesthread.c is 1265
+					Total size is 1265
+	Compare with new sizes:
+		fox01:~/CS3733/RecE> 	ls -l
+					total 36
+					-rwx------ 1 omu075 students 9068 Oct 29 18:31 getsizeschild
+					-rw-r--r-- 1 omu075 students 1146 Oct 29 18:31 getsizeschild.c <
+					-rwx------ 1 omu075 students 9090 Oct 29 18:17 getsizesthread
+					-rw-r--r-- 1 omu075 students 1265 Oct 29 18:13 getsizesthread.c <
+					-rw-r--r-- 1 omu075 students  438 Oct 29 18:17 makefile
+	
+	Conclusion:
+		The total size now prints last and the last file measured (getsizesthread.c) is the size used.
+Again this is because we are probably not using threads correctly again.  
+
+8.) Which of the values were reported correctly? Explain why each of the incorrect ones were incorrect.
+
+	Execution:
+		fox01:~/CS3733/RecE> 	make runthread
+					getsizesthread getsizeschild.c getsizesthread.c
+					Size of getsizeschild.c is 1202
+					Size of getsizesthread.c is 1265
+					Total size is 2467
+
+	All sizes are reported accuratley and the total size is now correct. This is because we are now 
+using threads.
+
+9.)Explain the results when you compile and run the program again and explain why the results should or should not be the same as before.
+	
+	When you remove pthread now the program only reports the size and total of getsizethread.c. Why? When threads are created with
+"pthread_create()", both threads start execution concurrently and there's no fixed ordering on their order of excecution. What happens 
+when you call "pthread_join()" the caller waits for the thread that's joined with it to terminate, so main thread waits for second thread
+we created. When we comment out "pthread_join()" however the main thread does not the main thread does not wait and executes the rest of the
+code without waiting for second thread to report it's findings, thus it is absent in our output.
+
+12.) Remove the reference to LIBTHREAD in the compile line for getsizesthread in the makefile. Execute, If the program compiles, run it again. 
+Describe the results.
+	Execution: 
+		fox01:~/CS3733/RecE> 	make
+					cc -D_GNU_SOURCE -o getsizeschild getsizeschild.c
+					cc -D_GNU_SOURCE -o getsizesthread getsizesthread.c 
+					/tmp/cczLJCQU.o: In function `main':
+					getsizesthread.c:(.text+0x113): undefined reference to `pthread_create'
+					getsizesthread.c:(.text+0x15d): undefined reference to `pthread_join'
+					collect2: error: ld returned 1 exit status
+					make: *** [getsizesthread] Error 1
+	Conclusion:
+		Google search: Compiling multithread programs: You need to include the appropriate headerfile "#include <pthread.h>" and 
+when compiling you must link the program to the pthread library or else you cannot use threads:
+				 ex.) gcc myProgram.o -o myProgram -lpthread
+	
