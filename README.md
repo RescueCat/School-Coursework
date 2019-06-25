@@ -1,5 +1,8 @@
 # School-Coursework
 
+**Software Validation and Quality Assurance** (CS 4723 | Fall 2018): *Python and JAVA*
+> Study of software validation techniques. Introduction to static analysis and software testing approaches (functional testing, structural testing, integration testing and regression testing). Overview of test planning and test case design. Review of topics in quality assurance.
+
 **Intro to Database Systems** (CS 3743 | Spring 2018): *SQL and JAVA*
 > Topics include basic concepts, various data models, database design, storage systems, indexing and hashing, database application design and implementation, and commercially available database systems.
 
