@@ -15,5 +15,5 @@
 **Computer Organization** (CS 3843 | Spring 2017): *Assembly (Intel Syntax)*
 >Organization of a computer system is introduced at block diagram level. Programming in assembly language and understanding the macroarchitecture of a computer is emphasized. Fundamentals of digital systems are introduced and the designs of various components used are investigated. 
 
-**Systems Programming** (CS 3443 | Fall 2016): *SED, AWK, PERL, and C*
+**Systems Programming** (CS 3423 | Fall 2016): *SED, AWK, PERL, and C*
 > A study of systems-level programming in a specific system (at present, Unix). Focus on concepts and tools to support the construction of systems programs.
