@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <ImageView fx:id="bookImage" fitHeight="202.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="myLab" layoutX="235.0" layoutY="29.0" prefHeight="17.0" prefWidth="304.0" />
+      <Label fx:id="aLabel" layoutX="235.0" layoutY="62.0" prefHeight="17.0" prefWidth="304.0" text="Label" />
+      <Label fx:id="isbnLabel" layoutX="235.0" layoutY="95.0" prefHeight="17.0" prefWidth="304.0" text="Label" />
+      <Label fx:id="pubLabel" layoutX="235.0" layoutY="131.0" prefHeight="17.0" prefWidth="304.0" text="Label" />
+      <Label fx:id="dateAddLabel" layoutX="235.0" layoutY="159.0" prefHeight="17.0" prefWidth="332.0" text="Label" />
+      <Button fx:id="saveButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" text="Save" />
+      <TextArea fx:id="summaryArea" layoutX="23.0" layoutY="227.0" prefHeight="159.0" prefWidth="501.0" />
+   </children>
+</Pane>
