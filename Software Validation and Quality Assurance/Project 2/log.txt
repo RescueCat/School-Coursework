@@ -1,0 +1,1317 @@
+--------- beginning of main
+12-13 11:14:12.645  1720  1720 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-13 11:14:12.648  1720  1720 D AndroidRuntime: CheckJNI is OFF
+12-13 11:14:12.682  1720  1720 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:14:12.684  1720  1720 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-13 11:14:12.698  1720  1720 E memtrack: Couldn't load memtrack module (No such file or directory)
+12-13 11:14:12.698  1720  1720 E android.os.Debug: failed to load memtrack module: -2
+12-13 11:14:12.699  1720  1720 I Radio-JNI: register_android_hardware_Radio DONE
+12-13 11:14:12.704  1720  1720 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+--------- beginning of system
+12-13 11:14:12.724   560   574 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{601d349 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{9d644e 1720 (unknown name)/0/u-1 remote:2832f13}: process crashing
+12-13 11:14:14.388  1720  1720 D MonkeyStub: translateCommand: wake
+12-13 11:14:15.077  1732  1732 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-13 11:14:15.085  1732  1732 D AndroidRuntime: CheckJNI is OFF
+12-13 11:14:15.172  1732  1732 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:14:15.179  1732  1732 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-13 11:14:15.218  1732  1732 E memtrack: Couldn't load memtrack module (No such file or directory)
+12-13 11:14:15.218  1732  1732 E android.os.Debug: failed to load memtrack module: -2
+12-13 11:14:15.220  1732  1732 I Radio-JNI: register_android_hardware_Radio DONE
+12-13 11:14:15.238  1732  1732 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+12-13 11:14:15.251   560   944 I ActivityManager: START u0 {flg=0x10000000 cmp=com.android.contacts/.activities.PeopleActivity} from uid 0 on display 0
+12-13 11:14:15.277  1732  1732 D AndroidRuntime: Shutting down VM
+12-13 11:14:15.300  1742  1742 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:14:15.303   560   571 I ActivityManager: Start proc 1742:com.android.contacts/u0a5 for activity com.android.contacts/.activities.PeopleActivity
+12-13 11:14:15.306   560   574 I ActivityManager: Killing 994:com.android.cellbroadcastreceiver/u0a4 (adj 906): empty #17
+12-13 11:14:15.440   560   948 D ActivityManager: cleanUpApplicationRecord -- 994
+12-13 11:14:15.497   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:14:15.531  1742  1742 W System  : ClassLoader referenced unknown path: /system/priv-app/Contacts/lib/x86
+12-13 11:14:15.799  1742  1742 I ContactsIntentResolver: Called with action: null
+12-13 11:14:15.802  1742  1759 I AccountTypeManager: Loaded meta-data for 0 account types, 0 accounts in 2ms(wall) 2ms(cpu)
+12-13 11:14:15.841  1742  1742 I ContactPhotoManager: Cache adj: 1.0
+12-13 11:14:16.082  1742  1742 D         : HostConnection::get() New Host Connection established 0xdb774f00, tid 1742
+12-13 11:14:16.106  1742  1742 W         : Process pipe failed
+12-13 11:14:16.146   560   581 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+12-13 11:14:16.229   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:16.229  1742  1768 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:14:16.232  1742  1768 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:14:16.233  1742  1768 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:14:16.235  1742  1768 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:14:16.247   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:16.248  1742  1768 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:14:16.272   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:16.277  1742  1768 D         : HostConnection::get() New Host Connection established 0xca6ad680, tid 1768
+12-13 11:14:16.295  1742  1768 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:14:16.295  1742  1768 D OpenGLRenderer: Swap behavior 1
+12-13 11:14:16.367  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:16.367  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddc160, error=EGL_BAD_MATCH
+12-13 11:14:16.856   560   581 I ActivityManager: Displayed com.android.contacts/.activities.PeopleActivity: +1s578ms
+12-13 11:14:17.458  1720  1720 D MonkeyStub: translateCommand: tap 950 1700
+12-13 11:14:17.485   560   681 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 48000 Hz, output 44100 Hz
+12-13 11:14:17.485   560   937 I ActivityManager: START u0 {act=android.intent.action.INSERT dat=content://com.android.contacts/contacts pkg=com.android.contacts cmp=com.android.contacts/.activities.CompactContactEditorActivity} from uid 10005 on display 0
+12-13 11:14:17.666   560   882 I ActivityManager: START u0 {flg=0x4000000 cmp=com.android.contacts/.activities.ContactEditorAccountsChangedActivity} from uid 10005 on display 0
+12-13 11:14:18.118  1742  1742 I Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
+12-13 11:14:18.209   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.227   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.250   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.285  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:18.285  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddc400, error=EGL_BAD_MATCH
+12-13 11:14:18.440   560   574 W art     : Long monitor contention with owner Binder:560_2 (572) at void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder)(ActivityManagerService.java:6981) waiters=0 in void com.android.server.am.ActivityManagerService$MainHandler.handleMessage(android.os.Message) for 135ms
+12-13 11:14:18.766   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:14:18.798   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.808   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.818   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.835  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:18.835  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xca6ae460, error=EGL_BAD_MATCH
+12-13 11:14:18.879   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.888   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.894   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:18.908  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:18.908  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc8fa08e0, error=EGL_BAD_MATCH
+12-13 11:14:18.929   560   670 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:14:18.931   560   672 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:14:18.932   560   670 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:14:19.169   560   581 I ActivityManager: Displayed com.android.contacts/.activities.ContactEditorAccountsChangedActivity: +798ms (total +1s668ms)
+12-13 11:14:19.466  1720  1720 D MonkeyStub: translateCommand: tap 310 1060
+12-13 11:14:19.513   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(1)
+12-13 11:14:19.756   560   937 W art     : Long monitor contention with owner Binder:560_7 (948) at void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder)(ActivityManagerService.java:6981) waiters=0 in boolean com.android.server.am.ActivityManagerService.refContentProvider(android.os.IBinder, int, int) for 172ms
+12-13 11:14:20.034  1742  1742 W CountryDetector: No location permissions, not registering for location updates.
+12-13 11:14:20.165  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc8fc8280 (RippleDrawable) with handle 0xdcdff610
+12-13 11:14:20.176   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:14:20.590  1742  1742 E WindowManager: 
+12-13 11:14:20.590  1742  1742 E WindowManager: android.view.WindowLeaked: Activity com.android.contacts.activities.ContactEditorAccountsChangedActivity has leaked window DecorView@b628705[] that was originally added here
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:418)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:331)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.Dialog.show(Dialog.java:322)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at com.android.contacts.activities.ContactEditorAccountsChangedActivity.onCreate(ContactEditorAccountsChangedActivity.java:169)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.Activity.performCreate(Activity.java:6679)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.os.Looper.loop(Looper.java:154)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:6119)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+12-13 11:14:20.590  1742  1742 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+12-13 11:14:20.606   560   716 W WindowManager: Failed looking up window
+12-13 11:14:20.606   560   716 W WindowManager: java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@a0878d1 does not exist
+12-13 11:14:20.606   560   716 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9415)
+12-13 11:14:20.606   560   716 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9406)
+12-13 11:14:20.606   560   716 W WindowManager: 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2387)
+12-13 11:14:20.606   560   716 W WindowManager: 	at com.android.server.wm.Session.remove(Session.java:193)
+12-13 11:14:20.606   560   716 W WindowManager: 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:242)
+12-13 11:14:20.606   560   716 W WindowManager: 	at com.android.server.wm.Session.onTransact(Session.java:136)
+12-13 11:14:20.606   560   716 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:565)
+12-13 11:14:21.473  1720  1720 D MonkeyStub: translateCommand: tap 520 1030
+12-13 11:14:21.481  1720  1720 D MonkeyStub: translateCommand: type John
+12-13 11:14:21.515   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:14:21.565   701   701 D         : HostConnection::get() New Host Connection established 0xd64594c0, tid 701
+12-13 11:14:21.578   701   701 W         : Process pipe failed
+12-13 11:14:21.647   701  1777 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:14:21.647   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:21.649   701  1777 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:14:21.658   701  1777 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:14:21.667   701  1777 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:14:21.700   701  1777 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:14:21.701   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:21.774   701  1777 D         : HostConnection::get() New Host Connection established 0xd6459680, tid 1777
+12-13 11:14:21.854   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:21.888   701  1777 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:14:21.888   701  1777 D OpenGLRenderer: Swap behavior 1
+12-13 11:14:22.024   701  1777 E EGL_emulation: tid 1777: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:22.024   701  1777 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0b000, error=EGL_BAD_MATCH
+12-13 11:14:23.489  1720  1720 D MonkeyStub: translateCommand: tap 505 1186
+12-13 11:14:23.498  1720  1720 D MonkeyStub: translateCommand: type 12345678900
+12-13 11:14:23.517   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:14:23.525  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:23.607   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:14:25.505  1720  1720 D MonkeyStub: translateCommand: tap 540 1750
+12-13 11:14:25.527  1720  1720 D MonkeyStub: translateCommand: type someemail@email.com
+12-13 11:14:25.542   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:14:25.580  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:28.534  1720  1720 D MonkeyStub: translateCommand: tap 1013 133
+12-13 11:14:28.719  1742  1782 V ContactSaveService: Saved contact. New URI: content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:28.731   560   944 I ActivityManager: START u0 {act=android.provider.action.QUICK_CONTACT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743/1 flg=0x4000000 pkg=com.android.contacts cmp=com.android.contacts/.quickcontact.QuickContactActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:28.907   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:28.916   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:28.922   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:28.934  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:28.934  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xca6b2ee0, error=EGL_BAD_MATCH
+12-13 11:14:28.959   560   572 I ActivityManager: START u0 {cmp=com.android.contacts/.common.activity.RequestDesiredPermissionsActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:29.361   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.386   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.410   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.435  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:29.435  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddce60, error=EGL_BAD_MATCH
+12-13 11:14:29.668   560   937 I ActivityManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.android.packageinstaller cmp=com.android.packageinstaller/.permission.ui.GrantPermissionsActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:29.824   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.838   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.862   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:29.887  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:29.887  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddce00, error=EGL_BAD_MATCH
+12-13 11:14:29.999  1788  1788 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:14:30.004   560  1294 I ActivityManager: Start proc 1788:com.android.packageinstaller/u0a17 for activity com.android.packageinstaller/.permission.ui.GrantPermissionsActivity
+12-13 11:14:30.244   560   944 W art     : Long monitor contention with owner Binder:560_4 (882) at void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread)(ActivityManagerService.java:6717) waiters=0 in void com.android.server.am.ActivityManagerService.activityIdle(android.os.IBinder, android.content.res.Configuration, boolean) for 104ms
+12-13 11:14:30.256  1788  1788 W System  : ClassLoader referenced unknown path: /system/priv-app/PackageInstaller/lib/x86
+12-13 11:14:30.643  1788  1788 D         : HostConnection::get() New Host Connection established 0xe7c2dec0, tid 1788
+12-13 11:14:30.650  1788  1788 W         : Process pipe failed
+12-13 11:14:30.715   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:30.715  1788  1802 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:14:30.717  1788  1802 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:14:30.720  1788  1802 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:14:30.721  1788  1802 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:14:30.731   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:30.737  1788  1802 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:14:30.749   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:30.755  1788  1802 D         : HostConnection::get() New Host Connection established 0xd645ab00, tid 1802
+12-13 11:14:30.774  1788  1802 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:14:30.774  1788  1802 D OpenGLRenderer: Swap behavior 1
+12-13 11:14:30.829   560   560 W WindowManager: Attempted to remove non-existing token: android.os.Binder@e44701f
+12-13 11:14:30.851  1788  1802 E EGL_emulation: tid 1802: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:30.851  1788  1802 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xca598ea0, error=EGL_BAD_MATCH
+12-13 11:14:31.192   560   581 I ActivityManager: Displayed com.android.packageinstaller/.permission.ui.GrantPermissionsActivity: +1s203ms (total +2s433ms)
+12-13 11:14:31.199  1742  1742 W IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
+12-13 11:14:31.199  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:32.578   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:14:33.539  1720  1720 D MonkeyStub: translateCommand: tap 804 1042
+12-13 11:14:33.571   560   560 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7ecada0)
+12-13 11:14:33.572   560   560 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@66cdd59)
+12-13 11:14:33.573   560   573 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7ecada0)
+12-13 11:14:33.573   560   573 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@66cdd59)
+12-13 11:14:36.548  1720  1720 D MonkeyStub: translateCommand: tap 804 1042
+12-13 11:14:36.567   560   560 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3a18d1e)
+12-13 11:14:36.568   560   573 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3a18d1e)
+12-13 11:14:39.552  1720  1720 D MonkeyStub: translateCommand: tap 804 1042
+12-13 11:14:39.565   560   560 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8ff03cc)
+12-13 11:14:39.566   560   573 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8ff03cc)
+12-13 11:14:39.685   560   944 I ActivityManager: START u0 {act=android.provider.action.QUICK_CONTACT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743/1 flg=0x10000 pkg=com.android.contacts cmp=com.android.contacts/.quickcontact.QuickContactActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:39.946  1742  1763 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:39.946  1742  1742 V NFC     : this device does not have NFC support
+12-13 11:14:40.027  1742  1762 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:40.095   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.117   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.139   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.163  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:40.163  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcd84060, error=EGL_BAD_MATCH
+12-13 11:14:40.228   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.247   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.267   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:40.298  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:40.298  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc928cc40, error=EGL_BAD_MATCH
+12-13 11:14:40.325  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:40.540  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:14:40.541  1742  1757 V SmsInteractionsLoader: loadInBackground
+12-13 11:14:40.599   560   581 I ActivityManager: Displayed com.android.contacts/.quickcontact.QuickContactActivity: +689ms
+12-13 11:14:40.608  1742  1763 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:14:40.632   847  1157 D MmsSmsDatabaseHelper: [MmsSmsDb] tableName: threads hasAutoIncrement: CREATE TABLE threads (_id INTEGER PRIMARY KEY AUTOINCREMENT,date INTEGER DEFAULT 0,message_count INTEGER DEFAULT 0,recipient_ids TEXT,snippet TEXT,snippet_cs INTEGER DEFAULT 0,read INTEGER DEFAULT 1,archived INTEGER DEFAULT 0,type INTEGER DEFAULT 0,error INTEGER DEFAULT 0,has_attachment INTEGER DEFAULT 0) result: true
+12-13 11:14:40.633   847  1157 D MmsSmsDatabaseHelper: [MmsSmsDb] tableName: canonical_addresses hasAutoIncrement: CREATE TABLE canonical_addresses (_id INTEGER PRIMARY KEY AUTOINCREMENT,address TEXT) result: true
+12-13 11:14:40.634   847  1157 D MmsSmsDatabaseHelper: [MmsSmsDb] tableName: part hasAutoIncrement: CREATE TABLE part (_id INTEGER PRIMARY KEY AUTOINCREMENT,mid INTEGER,seq INTEGER DEFAULT 0,ct TEXT,name TEXT,chset INTEGER,cd TEXT,fn TEXT,cid TEXT,cl TEXT,ctt_s INTEGER,ctt_t TEXT,_data TEXT,text TEXT) result: true
+12-13 11:14:40.634   847  1157 D MmsSmsDatabaseHelper: [MmsSmsDb] tableName: pdu hasAutoIncrement: CREATE TABLE pdu (_id INTEGER PRIMARY KEY AUTOINCREMENT,thread_id INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,msg_box INTEGER,read INTEGER DEFAULT 0,m_id TEXT,sub TEXT,sub_cs INTEGER,ct_t TEXT,ct_l TEXT,exp INTEGER,m_cls TEXT,m_type INTEGER,v INTEGER,m_size INTEGER,pri INTEGER,rr INTEGER,rpt_a INTEGER,resp_st INTEGER,st INTEGER,tr_id TEXT,retr_st INTEGER,retr_txt TEXT,retr_txt_cs INTEGER,read_status INTEGER,ct_cls INTEGER,resp_txt TEXT,d_tm INTEGER,d_rpt INTEGER,locked INTEGER DEFAULT 0,sub_id INTEGER DEFAULT -1, seen INTEGER DEFAULT 0,creator TEXT,text_only INTEGER DEFAULT 0) result: true
+12-13 11:14:40.634   847  1157 D MmsSmsDatabaseHelper: [getWritableDatabase] hasAutoIncrementThreads: true hasAutoIncrementAddresses: true hasAutoIncrementPart: true hasAutoIncrementPdu: true
+12-13 11:14:40.641   847  1157 D MmsSmsProvider: getSingleAddressId: insert new canonical_address for xxxxxx, _id=1
+12-13 11:14:40.644   847  1157 D MmsSmsProvider: getThreadId: create new thread_id for recipients xxxxxxxx
+12-13 11:14:40.644   847  1157 D MmsSmsProvider: insertThread: created new thread_id 1 for recipientIds xxxxxxx
+12-13 11:14:41.060   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:14:42.558  1720  1720 D MonkeyStub: translateCommand: tap 787 138
+12-13 11:14:42.820  1742  1762 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:42.941  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:44.113   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:14:44.565  1720  1720 D MonkeyStub: translateCommand: tap 914 135
+12-13 11:14:44.584   560   937 I ActivityManager: START u0 {act=android.intent.action.EDIT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743/1 cmp=com.android.contacts/.activities.CompactContactEditorActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:44.820  1742  1763 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:45.003   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:45.036   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:45.090   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:45.173  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:45.173  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcd84040, error=EGL_BAD_MATCH
+12-13 11:14:45.182  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:45.184  1742  1742 V ContactEditor: Time needed for loading: 505
+12-13 11:14:45.269  1742  1742 V ContactEditor: Time needed for setting UI: 85
+12-13 11:14:45.657   560   581 I ActivityManager: Displayed com.android.contacts/.activities.CompactContactEditorActivity: +1s52ms
+12-13 11:14:46.586  1720  1720 D MonkeyStub: translateCommand: tap 520 1000
+12-13 11:14:46.596  1720  1720 D MonkeyStub: translateCommand: type athan
+12-13 11:14:46.667   701   701 I LatinIME: Starting input. Cursor position = 4,4
+12-13 11:14:46.739   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.769   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.815   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.848   701  1777 E EGL_emulation: tid 1777: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:46.848   701  1777 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0afe0, error=EGL_BAD_MATCH
+12-13 11:14:46.879   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.885   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.888   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:46.904  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:46.904  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddc720, error=EGL_BAD_MATCH
+12-13 11:14:47.591   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:14:48.600  1720  1720 D MonkeyStub: translateCommand: tap 540 1174
+12-13 11:14:48.607  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_DEL
+12-13 11:14:48.635   701   701 I LatinIME: Starting input. Cursor position = 14,14
+12-13 11:14:48.656  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:48.747  1720  1720 D MonkeyStub: translateCommand: type 9
+12-13 11:14:50.756  1720  1720 D MonkeyStub: translateCommand: tap 640 1742
+12-13 11:14:50.768  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_DEL
+12-13 11:14:50.785   701   701 I LatinIME: Starting input. Cursor position = 19,19
+12-13 11:14:50.803  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:50.834  1720  1720 D MonkeyStub: translateCommand: type s
+12-13 11:14:52.840  1720  1720 D MonkeyStub: translateCommand: tap 507 1295
+12-13 11:14:52.917   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:52.935   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:52.948   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:52.986  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:52.986  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e9c0, error=EGL_BAD_MATCH
+12-13 11:14:53.324   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+12-13 11:14:53.325   847   847 I RetryPolicy: discarding deferred status: configuration_state=4
+12-13 11:14:53.332   847   847 D VvmTaskScheduler: No more tasks, stopping service if no task are added in 5000 millis
+12-13 11:14:53.332   847   847 D VvmTaskScheduler: create task:com.android.phone.vvm.omtp.ActivationTask
+12-13 11:14:53.333   847   847 D RetryPolicy: retry #2 for com.android.phone.vvm.omtp.ActivationTask@c5d642d queued, executing in 5000
+12-13 11:14:53.336   847   847 D VvmTaskScheduler: minimal wait time:4997
+12-13 11:14:53.337   847   847 D VvmTaskScheduler: minimal wait time:4997
+12-13 11:14:54.850  1720  1720 D MonkeyStub: translateCommand: tap 507 1295
+12-13 11:14:55.159   560   948 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@a815fd7 attribute=null, token = android.os.BinderProxy@c9764da
+12-13 11:14:55.223   701   701 I LatinIME: Starting input. Cursor position = 14,14
+12-13 11:14:55.256  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:55.593  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7f79200 (DropDownListView) with handle 0xc9077e50
+12-13 11:14:56.854  1720  1720 D MonkeyStub: translateCommand: tap 906 139
+12-13 11:14:56.923   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(1)
+12-13 11:14:57.055  1742  1813 V ContactSaveService: Saved contact. New URI: content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:14:57.062   560   716 I ActivityManager: START u0 {act=android.provider.action.QUICK_CONTACT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1 flg=0x4000000 pkg=com.android.contacts cmp=com.android.contacts/.quickcontact.QuickContactActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:57.072   560  1294 W ActivityManager: Duplicate finish request for ActivityRecord{289d0ef u0 com.android.contacts/.activities.CompactContactEditorActivity t5 f}
+12-13 11:14:57.288   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.301   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.314   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.369  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:57.369  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e4a0, error=EGL_BAD_MATCH
+12-13 11:14:57.385  1742  1762 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:14:57.390  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:57.551   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.567   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.603   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.647  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:57.647  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc7d14a60, error=EGL_BAD_MATCH
+12-13 11:14:57.673   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.690   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.707   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:57.731  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:57.731  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc7d14140, error=EGL_BAD_MATCH
+12-13 11:14:57.736  1742  1757 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743/1
+12-13 11:14:57.929  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:14:58.073  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:14:58.073  1742  1757 V SmsInteractionsLoader: loadInBackground
+12-13 11:14:58.113  1742  1762 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:14:58.115   847  1071 D MmsSmsProvider: getSingleAddressId: insert new canonical_address for xxxxxx, _id=2
+12-13 11:14:58.117   847  1071 D MmsSmsProvider: getThreadId: create new thread_id for recipients xxxxxxxx
+12-13 11:14:58.118   847  1071 D MmsSmsProvider: insertThread: created new thread_id 2 for recipientIds xxxxxxx
+12-13 11:14:58.285  1742  1742 I art     : Starting a blocking GC Explicit
+12-13 11:14:58.318  1742  1742 I art     : Explicit concurrent mark sweep GC freed 36595(2MB) AllocSpace objects, 12(248KB) LOS objects, 40% free, 16MB/28MB, paused 616us total 33.042ms
+12-13 11:14:58.337   847  1494 V VvmTaskScheduler: executing task com.android.phone.vvm.omtp.ActivationTask@c5d642d
+12-13 11:14:58.367   847  1494 I VvmActivationTask: VVM content provider configured - vvm_type_cvvm
+12-13 11:14:58.367   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_ACTIVATING
+12-13 11:14:58.387  1742  1742 I art     : Starting a blocking GC Explicit
+12-13 11:14:58.415  1742  1742 I art     : Explicit concurrent mark sweep GC freed 18677(1044KB) AllocSpace objects, 3(48KB) LOS objects, 40% free, 15MB/26MB, paused 548us total 28.014ms
+12-13 11:14:58.423   847  1494 V OmtpMessageSender: Sending BINARY sms 'Activate:dt=15' to 122:1808
+12-13 11:14:58.440   268   307 D baseband-sms: newsms
+12-13 11:14:58.440   268   307 D baseband-sms: sender:(N/A)
+12-13 11:14:58.440   268   307 D baseband-sms: receiver:122
+12-13 11:14:58.858  1720  1720 D MonkeyStub: translateCommand: tap 914 135
+12-13 11:14:58.879   560   716 I ActivityManager: START u0 {act=android.intent.action.EDIT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1 cmp=com.android.contacts/.activities.CompactContactEditorActivity (has extras)} from uid 10005 on display 0
+12-13 11:14:58.911  1742  1757 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:14:59.087   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:59.087   560   560 W WindowManager: Attempted to remove non-existing token: android.os.Binder@aa1bbad
+12-13 11:14:59.117   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:59.138   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:14:59.161  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:14:59.161  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e960, error=EGL_BAD_MATCH
+12-13 11:14:59.185  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:14:59.186  1742  1742 V ContactEditor: Time needed for loading: 279
+12-13 11:14:59.234  1742  1742 V ContactEditor: Time needed for setting UI: 48
+12-13 11:14:59.459  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:14:59.546   560   581 I ActivityManager: Displayed com.android.contacts/.activities.CompactContactEditorActivity: +661ms
+12-13 11:15:00.865  1720  1720 D MonkeyStub: translateCommand: tap 520 1000
+12-13 11:15:00.900  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_DEL
+12-13 11:15:00.925   701   701 I LatinIME: Starting input. Cursor position = 9,9
+12-13 11:15:00.968   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:01.000   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:01.032   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:01.057   701  1777 E EGL_emulation: tid 1777: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:01.057   701  1777 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0b000, error=EGL_BAD_MATCH
+12-13 11:15:01.090  1720  1720 D MonkeyStub: translateCommand: type athan
+12-13 11:15:01.961   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:03.096  1720  1720 D MonkeyStub: translateCommand: tap 540 1174
+12-13 11:15:03.104  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_DEL
+12-13 11:15:03.125   701   701 I LatinIME: Starting input. Cursor position = 14,14
+12-13 11:15:03.188  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:03.189  1720  1720 D MonkeyStub: translateCommand: type 1
+12-13 11:15:05.202  1720  1720 D MonkeyStub: translateCommand: tap 640 1742
+12-13 11:15:05.218  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_DEL
+12-13 11:15:05.236   701   701 I LatinIME: Starting input. Cursor position = 19,19
+12-13 11:15:05.286  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:05.286  1720  1720 D MonkeyStub: translateCommand: type m
+12-13 11:15:06.514   268   307 D baseband-sms: index:1/1
+12-13 11:15:06.514   268   307 D baseband-sms: txt:'FQKf.Σ:etΔ#W'
+12-13 11:15:06.521   847   847 D VvmStatusSmsFetcher: Request SMS successfully sent
+12-13 11:15:07.294  1720  1720 D MonkeyStub: translateCommand: tap 507 1295
+12-13 11:15:07.367   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:07.386   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:07.404   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:07.440  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:07.440  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc7eeae20, error=EGL_BAD_MATCH
+12-13 11:15:09.301  1720  1720 D MonkeyStub: translateCommand: tap 507 1295
+12-13 11:15:09.583   560   571 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@8dbbccb attribute=null, token = android.os.BinderProxy@458fa60
+12-13 11:15:09.629   701   701 I LatinIME: Starting input. Cursor position = 14,14
+12-13 11:15:09.713  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:09.915  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc8f93b00 (DropDownListView) with handle 0xc90775d0
+12-13 11:15:11.306  1720  1720 D MonkeyStub: translateCommand: tap 70 139
+12-13 11:15:11.415   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:11.441   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:11.462   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:11.504  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:11.504  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e880, error=EGL_BAD_MATCH
+12-13 11:15:13.313  1720  1720 D MonkeyStub: translateCommand: tap 775 997
+12-13 11:15:13.610  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:15:13.624  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:15:13.638  1742  1762 V SmsInteractionsLoader: loadInBackground
+12-13 11:15:13.689  1742  1757 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:15:13.689   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.724   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.764   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.807  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:13.807  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc7d7f9a0, error=EGL_BAD_MATCH
+12-13 11:15:13.809   560   572 W art     : Long monitor contention with owner Binder:560_5 (937) at int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface)(WindowManagerService.java:2850) waiters=1 in void com.android.server.wm.WindowManagerService.statusBarVisibilityChanged(int) for 129ms
+12-13 11:15:13.907   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.935   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.964   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:13.996  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:13.996  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e920, error=EGL_BAD_MATCH
+12-13 11:15:14.536  1742  1742 I art     : Starting a blocking GC Explicit
+12-13 11:15:14.563  1742  1742 I art     : Explicit concurrent mark sweep GC freed 12127(668KB) AllocSpace objects, 1(60KB) LOS objects, 39% free, 16MB/27MB, paused 356us total 26.067ms
+12-13 11:15:14.602  1742  1742 I art     : Starting a blocking GC Explicit
+12-13 11:15:14.626  1742  1742 I art     : Explicit concurrent mark sweep GC freed 11055(658KB) AllocSpace objects, 11(224KB) LOS objects, 39% free, 15MB/26MB, paused 414us total 23.289ms
+12-13 11:15:15.337  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:15:16.131  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:17.378  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:15:17.484   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:17.495   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:17.509   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:17.551  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:17.551  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e480, error=EGL_BAD_MATCH
+12-13 11:15:17.653   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:19.383  1720  1720 D MonkeyStub: translateCommand: tap 772 136
+12-13 11:15:19.487   560   716 I ActivityManager: START u0 {cmp=com.android.contacts/.common.list.AccountFilterActivity (has extras)} from uid 10005 on display 0
+12-13 11:15:19.521   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(3)
+12-13 11:15:19.829   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:19.849   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:19.873   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:19.897  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:19.897  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902eb00, error=EGL_BAD_MATCH
+12-13 11:15:19.982  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7f5cd00 (MenuPopupWindow$MenuDropDownListView) with handle 0xc9077890
+12-13 11:15:20.154   560   581 I ActivityManager: Displayed com.android.contacts/.common.list.AccountFilterActivity: +614ms
+12-13 11:15:21.390  1720  1720 D MonkeyStub: translateCommand: tap 526 292
+12-13 11:15:21.587   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:21.604   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:21.629   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:21.656  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:21.656  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc928c160, error=EGL_BAD_MATCH
+12-13 11:15:21.853  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7ff6500 (RippleDrawable) with handle 0xc9077480
+12-13 11:15:21.853  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7fc4980 (ListView) with handle 0xc9077690
+12-13 11:15:23.000   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:24.397  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:15:24.585   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:24.601   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:24.620   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:24.650  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:24.650  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ed60, error=EGL_BAD_MATCH
+12-13 11:15:26.405  1720  1720 D MonkeyStub: translateCommand: tap 772 267
+12-13 11:15:26.672   560   948 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@b1f7cab attribute=null, token = android.os.BinderProxy@5e700c8
+12-13 11:15:26.824   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:26.841   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:26.854   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:26.891  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:26.891  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ed00, error=EGL_BAD_MATCH
+12-13 11:15:27.265  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc8993e00 (MenuPopupWindow$MenuDropDownListView) with handle 0xc9077850
+12-13 11:15:28.416  1720  1720 D MonkeyStub: translateCommand: tap 503 933
+12-13 11:15:28.577   560   571 I ActivityManager: START u0 {act=android.intent.action.VIEW typ=vnd.android.cursor.item/sim-contact cmp=com.android.phone/.SimContacts (has extras)} from uid 10005 on display 0
+12-13 11:15:28.749   847   847 I ToolbarWidgetWrapper: Progress display unsupported
+12-13 11:15:28.765   847   847 E PhoneWindow: Circular progress bar not located in current window decor
+12-13 11:15:28.922   847   847 D         : HostConnection::get() New Host Connection established 0xca727cc0, tid 847
+12-13 11:15:28.934   847   847 W         : Process pipe failed
+12-13 11:15:29.055   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:29.055   847  1823 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:15:29.057   847  1823 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:15:29.058   847  1823 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:15:29.064   847  1823 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:15:29.087   847  1823 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:15:29.095   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:29.120   847  1823 D         : HostConnection::get() New Host Connection established 0xe7c2de00, tid 1823
+12-13 11:15:29.137   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:29.156   847  1823 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:15:29.156   847  1823 D OpenGLRenderer: Swap behavior 1
+12-13 11:15:29.275   847  1823 E EGL_emulation: tid 1823: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:29.275   847  1823 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc92fe8c0, error=EGL_BAD_MATCH
+12-13 11:15:29.682   560   581 I ActivityManager: Displayed com.android.phone/.SimContacts: +1s3ms
+12-13 11:15:29.682   847   847 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+12-13 11:15:29.685   847   847 E PhoneWindow: Circular progress bar not located in current window decor
+12-13 11:15:30.424  1720  1720 D MonkeyStub: translateCommand: tap 65 136
+12-13 11:15:30.742   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:30.780   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:30.828   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:30.855  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:30.855  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902eb60, error=EGL_BAD_MATCH
+12-13 11:15:30.983   847  1823 D OpenGLRenderer: endAllActiveAnimators on 0xc8596a00 (RippleDrawable) with handle 0xdcd83ef0
+12-13 11:15:32.097   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:32.437  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:15:32.583   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:32.597   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:32.611   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:32.644  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:32.644  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc928c500, error=EGL_BAD_MATCH
+12-13 11:15:34.441  1720  1720 D MonkeyStub: translateCommand: tap 783 392
+12-13 11:15:34.609   560   944 I ActivityManager: START u0 {act=android.telecom.action.MANAGE_BLOCKED_NUMBERS pkg=com.android.server.telecom cmp=com.android.server.telecom/.settings.BlockedNumbersActivity} from uid 10005 on display 0
+12-13 11:15:34.713   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:15:34.722  1827  1827 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:15:34.722   560   944 I ActivityManager: Start proc 1827:com.android.server.telecom:ui/1000 for activity com.android.server.telecom/.settings.BlockedNumbersActivity
+12-13 11:15:34.787  1827  1827 W System  : ClassLoader referenced unknown path: /system/priv-app/Telecom/lib/x86
+12-13 11:15:35.003  1827  1827 D         : HostConnection::get() New Host Connection established 0xdb774d00, tid 1827
+12-13 11:15:35.037  1827  1827 W         : Process pipe failed
+12-13 11:15:35.243  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc8feb680 (MenuPopupWindow$MenuDropDownListView) with handle 0xc9077340
+12-13 11:15:35.312   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:35.312  1827  1843 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:15:35.313  1827  1843 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:15:35.315  1827  1843 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:15:35.317  1827  1843 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:15:35.331  1827  1843 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:15:35.338   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:35.341  1827  1843 D         : HostConnection::get() New Host Connection established 0xd6416540, tid 1843
+12-13 11:15:35.385   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:35.412  1827  1843 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:15:35.412  1827  1843 D OpenGLRenderer: Swap behavior 1
+12-13 11:15:35.502  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:35.502  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcdbfba0, error=EGL_BAD_MATCH
+12-13 11:15:35.783   560   581 I ActivityManager: Displayed com.android.server.telecom/.settings.BlockedNumbersActivity: +1s72ms
+12-13 11:15:36.457  1720  1720 D MonkeyStub: translateCommand: tap 148 493
+12-13 11:15:36.634   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.652   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.684   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.756  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:36.756  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcdcfac0, error=EGL_BAD_MATCH
+12-13 11:15:36.831   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:15:36.858   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.874   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.902   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:36.933   701  1777 E EGL_emulation: tid 1777: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:36.933   701  1777 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0afe0, error=EGL_BAD_MATCH
+12-13 11:15:37.622   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:38.463  1720  1720 D MonkeyStub: translateCommand: type 2104109970
+12-13 11:15:38.931   560   672 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:15:38.933   560   670 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:15:38.934   560   670 W WifiMode: WiredSSID, Invalid SupportedRates!!!
+12-13 11:15:41.478  1720  1720 D MonkeyStub: translateCommand: tap 896 1109
+12-13 11:15:41.904   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:41.910   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:41.916   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:41.931  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:41.931  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcdcfac0, error=EGL_BAD_MATCH
+12-13 11:15:41.932  1827  1827 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:41.932  1827  1827 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:15:43.486  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:15:43.634   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:43.640   560   560 W WindowManager: Attempted to remove non-existing token: android.os.Binder@861d3e0
+12-13 11:15:43.654   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:43.683   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:43.712  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:43.712  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc928c540, error=EGL_BAD_MATCH
+12-13 11:15:43.914   560   882 W InputMethodManagerService: Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@13ca3c2 (uid=1000 pid=1827)
+12-13 11:15:44.240   560   574 I ActivityManager: Killing 1534:com.android.dialer/u0a8 (adj 906): empty #17
+12-13 11:15:44.261   560   882 D ActivityManager: cleanUpApplicationRecord -- 1534
+12-13 11:15:45.494  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:15:45.534   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(1)
+12-13 11:15:45.636   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:45.653   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:45.666   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:45.698  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:45.698  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ec20, error=EGL_BAD_MATCH
+12-13 11:15:47.339   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:47.501  1720  1720 D MonkeyStub: translateCommand: tap 783 392
+12-13 11:15:47.652   560  1294 I ActivityManager: START u0 {act=android.telecom.action.MANAGE_BLOCKED_NUMBERS pkg=com.android.server.telecom cmp=com.android.server.telecom/.settings.BlockedNumbersActivity} from uid 10005 on display 0
+12-13 11:15:47.870   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:47.903   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:47.927   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:47.952  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:47.952  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcdbfe20, error=EGL_BAD_MATCH
+12-13 11:15:48.119  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7dc8880 (MenuPopupWindow$MenuDropDownListView) with handle 0xc9077240
+12-13 11:15:48.185   560   581 I ActivityManager: Displayed com.android.server.telecom/.settings.BlockedNumbersActivity: +499ms
+12-13 11:15:49.516  1720  1720 D MonkeyStub: translateCommand: tap 973 635
+12-13 11:15:49.712   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:49.730   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:49.760   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:49.805  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:49.805  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddcb60, error=EGL_BAD_MATCH
+12-13 11:15:50.661   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:51.522  1720  1720 D MonkeyStub: translateCommand: tap 862 990
+12-13 11:15:51.806   560   937 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@709958 attribute=null, token = android.os.BinderProxy@f700f41
+12-13 11:15:51.847   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:51.853   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:51.858   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:51.872  1827  1843 E EGL_emulation: tid 1843: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:51.872  1827  1843 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcddc960, error=EGL_BAD_MATCH
+12-13 11:15:53.534  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:15:53.655   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:53.683   560   560 W WindowManager: Attempted to remove non-existing token: android.os.Binder@8d3c26c
+12-13 11:15:53.712   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:53.755   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:53.820  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:53.820  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ed20, error=EGL_BAD_MATCH
+12-13 11:15:54.246  1827  1827 I art     : Starting a blocking GC Explicit
+12-13 11:15:54.267  1827  1827 I art     : Explicit concurrent mark sweep GC freed 16432(1103KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 4MB/6MB, paused 2.819ms total 19.293ms
+12-13 11:15:54.283  1827  1827 I art     : Starting a blocking GC Explicit
+12-13 11:15:54.300  1827  1827 I art     : Explicit concurrent mark sweep GC freed 5974(330KB) AllocSpace objects, 2(80KB) LOS objects, 24% free, 4MB/5MB, paused 349us total 16.188ms
+12-13 11:15:55.539  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:15:55.667   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:55.684   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:55.699   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:55.733  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:55.734  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ece0, error=EGL_BAD_MATCH
+12-13 11:15:57.321   560   700 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+12-13 11:15:57.550  1720  1720 D MonkeyStub: translateCommand: tap 795 516
+12-13 11:15:57.690   560   937 I ActivityManager: START u0 {act=android.settings.SYNC_SETTINGS flg=0x80000 cmp=com.android.settings/.Settings$AccountSettingsActivity (has extras)} from uid 10005 on display 0
+12-13 11:15:57.815   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:15:57.861   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:15:57.873   560   948 D         : HostConnection::get() New Host Connection established 0xc622ca40, tid 948
+12-13 11:15:57.947   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:15:58.318  1742  1742 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+12-13 11:15:58.457   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+12-13 11:15:58.458   847   847 I RetryPolicy: discarding deferred status: configuration_state=4
+12-13 11:15:58.460   847   847 D VvmTaskScheduler: No more tasks, stopping service if no task are added in 5000 millis
+12-13 11:15:58.462   847   847 D VvmTaskScheduler: create task:com.android.phone.vvm.omtp.ActivationTask
+12-13 11:15:58.462   847   847 D RetryPolicy: retry #3 for com.android.phone.vvm.omtp.ActivationTask@4b8294b queued, executing in 5000
+12-13 11:15:58.470   847   847 D VvmTaskScheduler: minimal wait time:4993
+12-13 11:15:58.473   847   847 D VvmTaskScheduler: minimal wait time:4989
+12-13 11:15:58.760   913  1861 I IndexDatabaseHelper: Bootstrapped database
+12-13 11:15:58.773   913  1861 I IndexDatabaseHelper: Using schema version: 115
+12-13 11:15:58.774   913  1861 I IndexDatabaseHelper: Index is fine
+12-13 11:15:58.784   913  1861 D Index   : Indexing locale 'en_US' took 10 millis
+12-13 11:15:58.795   913  1861 D Index   : Indexing locale 'en_US' took 4 millis
+12-13 11:15:58.818   913  1861 V NFC     : this device does not have NFC support
+12-13 11:15:58.888   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:58.908   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:58.934   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:58.968   913   977 E EGL_emulation: tid 977: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:58.968   913   977 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0af60, error=EGL_BAD_MATCH
+12-13 11:15:58.993   913  1861 D Index   : Deleting data for locale 'en_US' took 2 millis
+12-13 11:15:59.002   913  1861 D Index   : Indexing locale 'en_US' took 9 millis
+12-13 11:15:59.312   560   581 I ActivityManager: Displayed com.android.settings/.Settings$AccountSettingsActivity: +1s498ms
+12-13 11:15:59.561  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:15:59.648   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:15:59.657   560   944 D         : HostConnection::get() New Host Connection established 0xc5a17180, tid 944
+12-13 11:15:59.681   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:15:59.847   560   581 W art     : Long monitor contention with owner Binder:560_6 (944) at android.graphics.Bitmap com.android.server.wm.WindowManagerService.screenshotApplicationsInner(android.os.IBinder, int, int, int, boolean, float, android.graphics.Bitmap$Config, boolean)(WindowManagerService.java:6462) waiters=0 in void com.android.server.wm.WindowAnimator$1.doFrame(long) for 235ms
+12-13 11:15:59.928   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:59.955   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:59.969   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:15:59.995  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:15:59.996  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902efc0, error=EGL_BAD_MATCH
+12-13 11:16:01.567  1720  1720 D MonkeyStub: translateCommand: tap 1023 136
+12-13 11:16:01.738   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:01.757   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:01.772   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:01.832  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:01.832  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e740, error=EGL_BAD_MATCH
+12-13 11:16:03.471   847  1494 V VvmTaskScheduler: executing task com.android.phone.vvm.omtp.ActivationTask@4b8294b
+12-13 11:16:03.507   847  1494 I VvmActivationTask: VVM content provider configured - vvm_type_cvvm
+12-13 11:16:03.508   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_ACTIVATING
+12-13 11:16:03.564   847  1494 V OmtpMessageSender: Sending BINARY sms 'Activate:dt=15' to 122:1808
+12-13 11:16:03.573  1720  1720 D MonkeyStub: translateCommand: tap 762 645
+12-13 11:16:03.635   268   307 D baseband-sms: newsms
+12-13 11:16:03.635   268   307 D baseband-sms: sender:(N/A)
+12-13 11:16:03.635   268   307 D baseband-sms: receiver:122
+12-13 11:16:03.717   560  1294 I ActivityManager: START u0 {cmp=com.android.contacts/.common.preference.ContactsPreferenceActivity} from uid 10005 on display 0
+12-13 11:16:04.282  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7f5d400 (MenuPopupWindow$MenuDropDownListView) with handle 0xc9077340
+12-13 11:16:04.441   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:04.458   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:04.483   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:04.510  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:04.510  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e460, error=EGL_BAD_MATCH
+12-13 11:16:04.752   560   581 I ActivityManager: Displayed com.android.contacts/.common.preference.ContactsPreferenceActivity: +967ms
+12-13 11:16:05.582  1720  1720 D MonkeyStub: translateCommand: tap 500 337
+12-13 11:16:05.972   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:06.003   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:06.024   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:06.068  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:06.068  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902e940, error=EGL_BAD_MATCH
+12-13 11:16:07.588  1720  1720 D MonkeyStub: translateCommand: tap 465 1050
+12-13 11:16:07.807   560   948 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@d583f8c attribute=null, token = android.os.BinderProxy@1d777e1
+12-13 11:16:08.031   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:08.872   560   573 W ResourceType: No known package when getting value for resource number 0x7f0200fc
+12-13 11:16:08.872   560   573 W ResourceType: No known package when getting value for resource number 0x7f0e03a3
+12-13 11:16:08.872   560   573 W ResourceType: No known package when getting value for resource number 0x7f0200fb
+12-13 11:16:08.872   560   573 W ResourceType: No known package when getting value for resource number 0x7f0e0926
+12-13 11:16:08.873   560   573 W ResourceType: No known package when getting value for resource number 0x7f0200fa
+12-13 11:16:08.873   560   573 W ResourceType: No known package when getting value for resource number 0x7f0e07e0
+12-13 11:16:08.886   560   647 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-13 11:16:08.906  1742  1759 I AccountTypeManager: Loaded meta-data for 0 account types, 0 accounts in 14ms(wall) 8ms(cpu)
+12-13 11:16:08.979   847   847 D CarrierSvcBindHelper: No carrier app for: 0
+12-13 11:16:09.596  1720  1720 D MonkeyStub: translateCommand: tap 500 337
+12-13 11:16:09.904   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:09.916   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:09.934   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:09.967  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:09.968  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ee60, error=EGL_BAD_MATCH
+12-13 11:16:11.228   268   307 D baseband-sms: index:1/1
+12-13 11:16:11.228   268   307 D baseband-sms: txt:'FQKf.Σ:etΔ#W'
+12-13 11:16:11.234   847   847 D VvmStatusSmsFetcher: Request SMS successfully sent
+12-13 11:16:11.601  1720  1720 D MonkeyStub: translateCommand: tap 500 923
+12-13 11:16:11.761   560   944 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@e012f45 attribute=null, token = android.os.BinderProxy@1d777e1
+12-13 11:16:11.946   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:13.612  1720  1720 D MonkeyStub: translateCommand: tap 482 505
+12-13 11:16:13.887   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:13.905   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:13.922   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:13.978  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:13.979  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc928c1c0, error=EGL_BAD_MATCH
+12-13 11:16:15.617  1720  1720 D MonkeyStub: translateCommand: tap 584 1065
+12-13 11:16:15.873   560   571 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@1423fa8 attribute=null, token = android.os.BinderProxy@1d777e1
+12-13 11:16:16.076   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:17.622  1720  1720 D MonkeyStub: translateCommand: tap 482 505
+12-13 11:16:17.962   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:17.977   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:18.003   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:18.041  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:18.041  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcd84060, error=EGL_BAD_MATCH
+12-13 11:16:19.632  1720  1720 D MonkeyStub: translateCommand: tap 562 933
+12-13 11:16:19.859   560   882 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@6a289a7 attribute=null, token = android.os.BinderProxy@1d777e1
+12-13 11:16:20.070   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:21.636  1720  1720 D MonkeyStub: translateCommand: tap 493 668
+12-13 11:16:23.644  1720  1720 D MonkeyStub: translateCommand: tap 470 514
+12-13 11:16:23.751   560   937 I ActivityManager: START u0 {cmp=com.android.contacts/.common.activity.LicenseActivity} from uid 10005 on display 0
+12-13 11:16:23.862   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(11)
+12-13 11:16:23.880  1742  1742 W System  : ClassLoader referenced unknown path: /system/app/webview/lib/x86
+12-13 11:16:23.880  1742  1742 D ApplicationLoaders: ignored Vulkan layer search path /system/app/webview/lib/x86:/system/app/webview/webview.apk!/lib/x86:/system/lib:/vendor/lib for namespace 0xe7f38090
+12-13 11:16:23.882  1742  1742 I WebViewFactory: Loading com.android.webview version 52.0.2743.100 (code 275610010)
+12-13 11:16:23.913  1742  1742 I cr_LibraryLoader: Time to load native libraries: 2 ms (timestamps 5901-5903)
+12-13 11:16:23.914  1742  1742 I cr_LibraryLoader: Expected native library version number "52.0.2743.100", actual native library version number "52.0.2743.100"
+12-13 11:16:23.926  1742  1742 V WebViewChromiumFactoryProvider: Binding Chromium to main looper Looper (main, tid 1) {c8e7113}
+12-13 11:16:23.926  1742  1742 I cr_LibraryLoader: Expected native library version number "52.0.2743.100", actual native library version number "52.0.2743.100"
+12-13 11:16:23.926  1742  1742 I chromium: [INFO:library_loader_hooks.cc(143)] Chromium logging enabled: level = 0, default verbosity = 0
+12-13 11:16:23.948  1742  1742 I cr_BrowserStartup: Initializing chromium process, singleProcess=true
+12-13 11:16:24.068  1742  1880 W cr_media: Requires BLUETOOTH permission
+12-13 11:16:24.070  1742  1742 I cr_DRP  : No DRP key due to exception:java.lang.ClassNotFoundException: com.android.webview.chromium.Drp
+12-13 11:16:24.120  1742  1742 W cr_AwContents: onDetachedFromWindow called when already detached. Ignoring
+12-13 11:16:24.124  1742  1742 I cr_Ime  : ImeThread is not enabled.
+12-13 11:16:24.200  1742  1891 E libEGL  : validate_display:99 error 3008 (EGL_BAD_DISPLAY)
+12-13 11:16:24.231  1742  1891 W AudioCapabilities: Unsupported mime audio/x-pcm
+12-13 11:16:24.265  1742  1891 I VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+12-13 11:16:24.275  1742  1891 D         : HostConnection::get() New Host Connection established 0xca6e2f80, tid 1891
+12-13 11:16:24.512   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:24.532   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:24.565   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:24.597  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:24.597  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc902ee20, error=EGL_BAD_MATCH
+12-13 11:16:24.822   560   581 I ActivityManager: Displayed com.android.contacts/.common.activity.LicenseActivity: +959ms
+12-13 11:16:25.083  1742  1768 E emuglGLESv2_enc: device/generic/goldfish-opengl/system/GLESv2_enc/GL2Encoder.cpp:s_glVertexAttribPointer:297 GL error 0x501
+12-13 11:16:25.135  1742  1742 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1742
+12-13 11:16:25.198   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:26.652  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:27.265   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:27.299   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:27.341   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:27.381  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:27.381  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5ca0, error=EGL_BAD_MATCH
+12-13 11:16:28.118  1742  1742 W cr_AwContents: WebView.destroy() called while WebView is still attached to window.
+12-13 11:16:28.660  1720  1720 D MonkeyStub: translateCommand: tap 547 676
+12-13 11:16:28.872   560   948 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://www.google.com/... cmp=org.chromium.webview_shell/.WebViewBrowserActivity} from uid 10005 on display 0
+12-13 11:16:28.991   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:16:29.016   560   571 I ActivityManager: Start proc 1901:org.chromium.webview_shell/u0a30 for activity org.chromium.webview_shell/.WebViewBrowserActivity
+12-13 11:16:29.017  1901  1901 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:16:29.050  1901  1901 W System  : ClassLoader referenced unknown path: /system/app/Browser2/lib/x86
+12-13 11:16:29.087  1901  1901 W System  : ClassLoader referenced unknown path: /system/app/webview/lib/x86
+12-13 11:16:29.088  1901  1901 D ApplicationLoaders: ignored Vulkan layer search path /system/app/webview/lib/x86:/system/app/webview/webview.apk!/lib/x86:/system/lib:/vendor/lib for namespace 0xe7ef2090
+12-13 11:16:29.089  1901  1901 I WebViewFactory: Loading com.android.webview version 52.0.2743.100 (code 275610010)
+12-13 11:16:29.123  1901  1901 I cr_LibraryLoader: Time to load native libraries: 4 ms (timestamps 1107-1111)
+12-13 11:16:29.123  1901  1901 I cr_LibraryLoader: Expected native library version number "52.0.2743.100", actual native library version number "52.0.2743.100"
+12-13 11:16:29.145  1901  1901 V WebViewChromiumFactoryProvider: Binding Chromium to main looper Looper (main, tid 1) {860c833}
+12-13 11:16:29.145  1901  1901 I cr_LibraryLoader: Expected native library version number "52.0.2743.100", actual native library version number "52.0.2743.100"
+12-13 11:16:29.146  1901  1901 I chromium: [INFO:library_loader_hooks.cc(143)] Chromium logging enabled: level = 0, default verbosity = 0
+12-13 11:16:29.197  1901  1901 I cr_BrowserStartup: Initializing chromium process, singleProcess=true
+12-13 11:16:29.224  1901  1901 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:16:29.226  1901  1901 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:16:29.262  1901  1901 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:16:29.263  1901  1901 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:16:29.276  1901  1901 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:16:29.290  1901  1901 D         : HostConnection::get() New Host Connection established 0xdb748700, tid 1901
+12-13 11:16:29.323  1901  1901 W         : Process pipe failed
+12-13 11:16:29.558  1901  1927 W cr_media: Requires BLUETOOTH permission
+12-13 11:16:29.575  1901  1901 I cr_DRP  : No DRP key due to exception:java.lang.ClassNotFoundException: com.android.webview.chromium.Drp
+12-13 11:16:29.681  1901  1901 W cr_AwContents: onDetachedFromWindow called when already detached. Ignoring
+12-13 11:16:29.702  1901  1901 I cr_Ime  : ImeThread is not enabled.
+12-13 11:16:29.753  1901  1940 E libEGL  : validate_display:99 error 3008 (EGL_BAD_DISPLAY)
+12-13 11:16:29.769  1901  1940 W AudioCapabilities: Unsupported mime audio/x-pcm
+12-13 11:16:29.831  1901  1940 I VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+12-13 11:16:29.849  1901  1940 D         : HostConnection::get() New Host Connection established 0xc7f26740, tid 1940
+12-13 11:16:30.075  1901  1939 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:16:30.075  1901  1939 D OpenGLRenderer: Swap behavior 1
+12-13 11:16:30.075  1901  1939 D         : HostConnection::get() New Host Connection established 0xc7f26f00, tid 1939
+12-13 11:16:30.075   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:30.102   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:30.133   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:30.217  1901  1939 E EGL_emulation: tid 1939: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:30.217  1901  1939 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc957f540, error=EGL_BAD_MATCH
+12-13 11:16:30.463   560   581 I ActivityManager: Displayed org.chromium.webview_shell/.WebViewBrowserActivity: +1s483ms
+12-13 11:16:30.629  1901  1939 E emuglGLESv2_enc: device/generic/goldfish-opengl/system/GLESv2_enc/GL2Encoder.cpp:s_glVertexAttribPointer:297 GL error 0x501
+12-13 11:16:30.817  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:30.837   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:31.097  1901  1950 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-13 11:16:31.675  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:31.783  1901  1912 I art     : Background sticky concurrent mark sweep GC freed 35478(2MB) AllocSpace objects, 3(60KB) LOS objects, 42% free, 4MB/8MB, paused 561us total 110.910ms
+12-13 11:16:31.943  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:31.943  1901  1901 I chromium: ", source: https://policies.google.com/privacy (0)
+12-13 11:16:31.944  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:32.051   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:32.074   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:32.099   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:32.134  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:32.134  1901  1901 I chromium: ", source: about:blank (0)
+12-13 11:16:32.136  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:32.136  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc419dfe0, error=EGL_BAD_MATCH
+12-13 11:16:32.138  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:32.138  1901  1901 I chromium: ", source: about:blank (0)
+12-13 11:16:32.140  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:32.140  1901  1901 I chromium: ", source: about:blank (0)
+12-13 11:16:32.140  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:32.140  1901  1901 I chromium: ", source: about:blank (0)
+12-13 11:16:32.528  1901  1901 I chromium: [INFO:CONSOLE(259)] "%c%s", source: /_/mss/boq-identity/_/js/k=boq-identity.IdentityPoliciesUi.en_US.5EU8bUx8jzI.O/am=EFA/rt=j/d=1/excm=privacyhomeview,_b,_tp/ed=1/dg=0/rs=AOaEmlGc3mW806X7b_id0hIS_pqsbTSZnA/m=_b,_tp (259)
+12-13 11:16:32.528  1901  1901 I chromium: [INFO:CONSOLE(259)] "%c%s", source: /_/mss/boq-identity/_/js/k=boq-identity.IdentityPoliciesUi.en_US.5EU8bUx8jzI.O/am=EFA/rt=j/d=1/excm=privacyhomeview,_b,_tp/ed=1/dg=0/rs=AOaEmlGc3mW806X7b_id0hIS_pqsbTSZnA/m=_b,_tp (259)
+12-13 11:16:32.761   560   574 I ActivityManager: Killing 1564:com.android.camera2/u0a32 (adj 906): empty #17
+12-13 11:16:32.785   560  1294 D ActivityManager: cleanUpApplicationRecord -- 1564
+12-13 11:16:33.682  1720  1720 D MonkeyStub: translateCommand: tap 559 821
+12-13 11:16:33.902   560   716 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://www.google.com/... cmp=org.chromium.webview_shell/.WebViewBrowserActivity} from uid 10005 on display 0
+12-13 11:16:34.004  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:34.004  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:34.041  1901  1901 W cr_AwContents: onDetachedFromWindow called when already detached. Ignoring
+12-13 11:16:34.049  1901  1901 I cr_Ime  : ImeThread is not enabled.
+12-13 11:16:34.660   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:34.681   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:34.700   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:34.733  1901  1939 E EGL_emulation: tid 1939: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:34.733  1901  1939 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc6417c80, error=EGL_BAD_MATCH
+12-13 11:16:35.051   560   581 I ActivityManager: Displayed org.chromium.webview_shell/.WebViewBrowserActivity: +1s99ms
+12-13 11:16:35.438   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:36.242  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:36.494  1901  1901 I chromium: [INFO:CONSOLE(1)] "'webkitIDBIndex' is deprecated. Please use 'IDBIndex' instead.", source:  (1)
+12-13 11:16:36.686  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:36.783   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:36.799   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:36.821   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:36.853  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:36.853  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5ca0, error=EGL_BAD_MATCH
+12-13 11:16:37.033  1901  1901 I chromium: [INFO:CONSOLE(0)] "Unrecognized Content-Security-Policy directive 'worker-src'.
+12-13 11:16:37.033  1901  1901 I chromium: ", source: https://policies.google.com/terms (0)
+12-13 11:16:37.034  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:37.324  1901  1901 I chromium: [INFO:CONSOLE(259)] "%c%s", source: /_/mss/boq-identity/_/js/k=boq-identity.IdentityPoliciesUi.en_US.5EU8bUx8jzI.O/am=EFA/rt=j/d=1/excm=termshomeview,_b,_tp/ed=1/dg=0/rs=AOaEmlGc3mW806X7b_id0hIS_pqsbTSZnA/m=_b,_tp (259)
+12-13 11:16:37.324  1901  1901 I chromium: [INFO:CONSOLE(259)] "%c%s", source: /_/mss/boq-identity/_/js/k=boq-identity.IdentityPoliciesUi.en_US.5EU8bUx8jzI.O/am=EFA/rt=j/d=1/excm=termshomeview,_b,_tp/ed=1/dg=0/rs=AOaEmlGc3mW806X7b_id0hIS_pqsbTSZnA/m=_b,_tp (259)
+12-13 11:16:37.385  1901  1901 I art     : Starting a blocking GC Explicit
+12-13 11:16:37.404  1901  1901 I art     : Explicit concurrent mark sweep GC freed 53890(2MB) AllocSpace objects, 0(0B) LOS objects, 25% free, 5MB/6MB, paused 765us total 19.247ms
+12-13 11:16:37.413  1901  1901 I art     : Starting a blocking GC Explicit
+12-13 11:16:37.433  1901  1901 I art     : Explicit concurrent mark sweep GC freed 2553(122KB) AllocSpace objects, 12(384KB) LOS objects, 25% free, 4MB/6MB, paused 365us total 19.843ms
+12-13 11:16:37.704  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:37.704  1901  1901 W cr_BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 1901
+12-13 11:16:38.691  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:41.696  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:41.919   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:41.974   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:42.028   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:42.080  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:42.080  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de59e0, error=EGL_BAD_MATCH
+12-13 11:16:42.665   603   603 W SurfaceFlinger: couldn't log to binary event log: overflow.
+12-13 11:16:44.701  1720  1720 D MonkeyStub: translateCommand: tap 500 500
+12-13 11:16:44.716   560   572 I ActivityManager: START u0 {act=android.intent.action.INSERT dat=content://com.android.contacts/contacts pkg=com.android.contacts cmp=com.android.contacts/.activities.CompactContactEditorActivity (has extras)} from uid 10005 on display 0
+12-13 11:16:45.368  1742  1742 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+12-13 11:16:45.450   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:45.466   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:45.489   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:45.534  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:45.534  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5400, error=EGL_BAD_MATCH
+12-13 11:16:45.963   560   581 I ActivityManager: Displayed com.android.contacts/.activities.CompactContactEditorActivity: +1s148ms
+12-13 11:16:47.705  1720  1720 D MonkeyStub: translateCommand: tap 520 1030
+12-13 11:16:47.712  1720  1720 D MonkeyStub: translateCommand: type Andrew
+12-13 11:16:47.739   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:16:47.776   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:47.804   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:47.862   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:47.917   701  1777 E EGL_emulation: tid 1777: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:47.917   701  1777 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xe7c0b000, error=EGL_BAD_MATCH
+12-13 11:16:49.717  1720  1720 D MonkeyStub: translateCommand: tap 505 1186
+12-13 11:16:49.724  1720  1720 D MonkeyStub: translateCommand: type 10098765432
+12-13 11:16:49.744   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:16:49.789  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:16:51.732  1720  1720 D MonkeyStub: translateCommand: tap 540 1750
+12-13 11:16:51.743  1720  1720 D MonkeyStub: translateCommand: type someemail@email.com
+12-13 11:16:51.752   701   701 I LatinIME: Starting input. Cursor position = 0,0
+12-13 11:16:51.792  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:16:54.749  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:56.753  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:16:56.804   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:56.818   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:56.832   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:56.861  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:56.861  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc7ffe640, error=EGL_BAD_MATCH
+12-13 11:16:58.758  1720  1720 D MonkeyStub: translateCommand: tap 775 997
+12-13 11:16:58.811   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(2)
+12-13 11:16:58.817  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc8dc1100 (RippleDrawable) with handle 0xc2dd6890
+12-13 11:16:58.880   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:58.896   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:58.921   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:16:58.948  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:16:58.948  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5160, error=EGL_BAD_MATCH
+12-13 11:16:59.102  1742  1742 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+12-13 11:17:00.764  1720  1720 D MonkeyStub: translateCommand: tap 432 656
+12-13 11:17:00.891   560   948 I ActivityManager: START u0 {act=android.provider.action.QUICK_CONTACT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1 flg=0x4000000 pkg=com.android.contacts cmp=com.android.contacts/.quickcontact.QuickContactActivity (has extras)} from uid 10005 on display 0
+12-13 11:17:00.984  1742  2016 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:01.088   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:01.104   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:01.131   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:01.172  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:01.172  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc80ff9e0, error=EGL_BAD_MATCH
+12-13 11:17:01.302  1742  1881 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:01.407   560   581 I ActivityManager: Displayed com.android.contacts/.quickcontact.QuickContactActivity: +473ms
+12-13 11:17:01.445  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:01.490  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:01.490  1742  1881 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:01.550  1742  2016 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:03.641   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+12-13 11:17:03.641   847   847 I RetryPolicy: discarding deferred status: configuration_state=4
+12-13 11:17:03.644   847   847 D VvmTaskScheduler: No more tasks, stopping service if no task are added in 5000 millis
+12-13 11:17:03.645   847   847 D VvmTaskScheduler: create task:com.android.phone.vvm.omtp.ActivationTask
+12-13 11:17:03.646   847   847 D RetryPolicy: retry #4 for com.android.phone.vvm.omtp.ActivationTask@52b6de6 queued, executing in 5000
+12-13 11:17:03.649   847   847 D VvmTaskScheduler: minimal wait time:4998
+12-13 11:17:03.650   847   847 D VvmTaskScheduler: minimal wait time:4997
+12-13 11:17:03.768  1720  1720 D MonkeyStub: translateCommand: tap 612 1276
+12-13 11:17:03.786   560   571 I ActivityManager: START u0 {act=android.intent.action.CALL dat=tel:xxxxx-xxx-xxxx flg=0x10000000 cmp=com.android.server.telecom/.components.UserCallActivity (has extras)} from uid 10005 on display 0
+12-13 11:17:03.988  1742  1871 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:04.096  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:04.124   560   560 I Telecom : CallIntentProcessor: onReceive - isUnknownCall: false: PCR.oR@AFY
+12-13 11:17:04.167   560   560 I Telecom : Event: Call TC@1: CREATED, null: PCR.oR@AFY
+12-13 11:17:04.168   560   560 I Telecom : Event: Call TC@1: SET_CONNECTING, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0}: PCR.oR@AFY
+12-13 11:17:04.169   560   957 I Telecom : CallAudioRouteStateMachine: Message received: UPDATE_SYSTEM_AUDIO_ROUTE=1201, arg1=0: PCR.oR->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AFY_1
+12-13 11:17:04.170   560   560 I Telecom : TelecomWakeLock: WakeLock already released with id: 26: PCR.oR@AFY
+12-13 11:17:04.171   560   966 I Telecom : CallAudioModeStateMachine: Message received: NEW_ACTIVE_OR_DIALING_CALL.: PCR.oR->CAMSM.pM_2001@AFY_2
+12-13 11:17:04.171   560   966 I Telecom : CallAudioModeStateMachine: Audio focus entering SIM CALL state: PCR.oR->CAMSM.pM_2001@AFY_2
+12-13 11:17:04.170   560   560 I Telecom : InCallWakeLockController: Releasing full wake lock: PCR.oR@AFY
+12-13 11:17:04.172   560   966 I MediaFocusControl:  AudioFocus  requestAudioFocus() from uid/pid 1000/560 clientId=AudioFocus_For_Phone_Ring_And_Calls req=2 flags=0x4
+12-13 11:17:04.173   560   560 I Telecom : InCallController: defaultDialer: null: PCR.oR@AFY
+12-13 11:17:04.173   560   560 I Telecom : InCallController: defaultDialer: null: PCR.oR@AFY
+12-13 11:17:04.176   560   560 I Telecom : CarSwappingInCallServiceConnection: carmodechange: false => false: PCR.oR@AFY
+12-13 11:17:04.176   560   560 I Telecom : EmergencyInCallServiceConnection: Attempting to bind to InCall [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl} supportsExternal? true], with Intent { act=android.telecom.InCallService cmp=com.android.dialer/com.android.incallui.InCallServiceImpl (has extras) }: PCR.oR@AFY
+12-13 11:17:04.177   560  2022 D AudioTrack: Client defaulted notificationFrames to 512 for frameCount 1024
+12-13 11:17:04.185  2024  2024 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:17:04.188   560   560 I ActivityManager: Start proc 2024:com.android.dialer/u0a8 for service com.android.dialer/com.android.incallui.InCallServiceImpl
+12-13 11:17:04.205   560   560 I Telecom : NewOutgoingCallIntentBroadcaster: Sending NewOutgoingCallBroadcast for [TC@1, CONNECTING, null, tel:* ***-***-****, A, childs(0), has_parent(false), [Capabilities:], [Properties:]] to UserHandle{0}: PCR.oR@AFY
+12-13 11:17:04.206   560   957 I Telecom : CallAudioRouteStateMachine: setSystemAudioState: changing from [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] to [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: PCR.oR->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AFY_1
+12-13 11:17:04.208   560   560 I Telecom : TelecomSystem: CallerInfoAsyncQuery.startQuery number=[3171c35f7972fa72b25acb71900b473d464c311b] cookie=PCR.oR->CILH.sL@AFY_0_0: PCR.oR->CILH.sL@AFY_0
+12-13 11:17:04.232  2024  2024 W System  : ClassLoader referenced unknown path: /system/priv-app/Dialer/lib/x86
+12-13 11:17:04.237   560   560 V GpsNetInitiatedHandler: ACTION_NEW_OUTGOING_CALL - false
+12-13 11:17:04.249   560   560 I Telecom : CallerInfoLookupHelper: CI query for handle tel:* ***-***-**** has completed; notifying all listeners.: PCR.oR->CILH.sL->CILH.oQC@AFY_0_0
+12-13 11:17:04.249   560   560 I Telecom : Call: CallerInfo received for tel:* ***-***-****: com.android.internal.telephony.CallerInfo@9cf4b59 { name non-null, phoneNumber non-null }: PCR.oR->CILH.sL->CILH.oQC@AFY_0_0
+12-13 11:17:04.249   560   560 I Telecom : CallerInfoLookupHelper: There is no photo for this contact, skipping photo query: PCR.oR->CILH.sL->CILH.oQC@AFY_0_0
+12-13 11:17:04.256  2024  2024 D ExtensionsFactory: No custom extensions.
+12-13 11:17:04.267  2024  2024 D BlockedNumbersAuto: Not attempting auto-migrate: already checked once.
+12-13 11:17:04.267  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:04.268  1742  1871 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:04.320  1742  1881 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:04.360  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=0, hor=0, ui=0, aud=EARPIECE}
+12-13 11:17:04.360  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already released
+12-13 11:17:04.360  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:04.369  2024  2024 I InCall  : InCallPresenter - setBoundAndWaitingForOutgoingCall: true
+12-13 11:17:04.385   560  1294 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x10040000 cmp=com.android.dialer/com.android.incallui.InCallActivity (has extras)} from uid 10008 on display 0
+12-13 11:17:04.400   560   560 I Telecom : InCallController: onConnected to ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}: ICSBC.oSC@AFc
+12-13 11:17:04.401   560   560 I Telecom : InCallController: Adding 1 calls to InCallService after onConnected: ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}, including external calls: ICSBC.oSC@AFc
+12-13 11:17:04.415   560   560 I Telecom : InCallController: 1 calls sent to InCallService.: ICSBC.oSC@AFc
+12-13 11:17:04.434   560   560 I Telecom : NewOutgoingCallBroadcastIntentReceiver: Received new-outgoing-call-broadcast for [TC@1, CONNECTING, null, tel:* ***-***-****, A, childs(0), has_parent(false), [Capabilities:], [Properties:]] with data [0cd221b2243c77a42270da0e3d2d3e71bffb3a0a]: NOCBIR.oR@AFg
+12-13 11:17:04.454   560   560 I Telecom : CallsManager: Creating a new outgoing call with handle: tel:***********: NOCBIR.oR@AFg
+12-13 11:17:04.486   560   560 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, null, tel:***********, A, childs(0), has_parent(false), [Capabilities:], [Properties:]]: NOCBIR.oR@AFg
+12-13 11:17:04.496   560   560 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: NOCBIR.oR@AFg
+12-13 11:17:04.504   560   560 I Telecom : PhoneAccountRegistrar: SimCallManager queried, returning: null: NOCBIR.oR@AFg
+12-13 11:17:04.504   560   560 I Telecom : CreateConnectionProcessor: Trying attempt CallAttemptRecord(ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0},ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0}): NOCBIR.oR@AFg
+12-13 11:17:04.506   560   560 I Telecom : Event: Call TC@1: BIND_CS, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}: NOCBIR.oR@AFg
+12-13 11:17:04.510   560   560 I Telecom : TelecomSystem: CallerInfoAsyncQuery.startQuery number=[0cd221b2243c77a42270da0e3d2d3e71bffb3a0a] cookie=NOCBIR.oR->CILH.sL@AFg_0_0: NOCBIR.oR->CILH.sL@AFg_0
+12-13 11:17:04.544   560   560 I Telecom : ServiceBinderConnection: Service bound ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}: SBC.oSC@AFk
+12-13 11:17:04.551   560   560 I Telecom : Event: Call TC@1: CS_BOUND, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}: SBC.oSC@AFk
+12-13 11:17:04.555   560   560 I Telecom : Event: Call TC@1: START_CONNECTION, tel:***********: SBC.oSC@AFk
+12-13 11:17:04.557   560   957 I Telecom : CallAudioRouteStateMachine: Message received: SWITCH_FOCUS=4001, arg1=2: PCR.oR->CAMSM.pM_2001->CARSM.pM_SWITCH_FOCUS@AFY_2_2
+12-13 11:17:04.558  2024  2024 I InCall  : CallList - onUpdate - [Call_0, CONNECTING, [Capabilities:], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:04.558  2024  2024 I InCall  : InCallPresenter - Phone switching state: OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.561  2024  2024 I InCall  : InCallPresenter - setBoundAndWaitingForOutgoingCall: false
+12-13 11:17:04.577   560   957 I Telecom : Event: Call TC@1: AUDIO_ROUTE, Leaving state QuiescentEarpieceRoute: PCR.oR->CAMSM.pM_2001->CARSM.pM_SWITCH_FOCUS@AFY_2_2
+12-13 11:17:04.577   560   957 I Telecom : Event: Call TC@1: AUDIO_ROUTE, Entering state ActiveEarpieceRoute: PCR.oR->CAMSM.pM_2001->CARSM.pM_SWITCH_FOCUS@AFY_2_2
+12-13 11:17:04.578   560   957 I Telecom : CallAudioRouteStateMachine: setNotificationsSuppressed: on=yes; suppressed=no: PCR.oR->CAMSM.pM_2001->CARSM.pM_SWITCH_FOCUS@AFY_2_2
+12-13 11:17:04.579   560   957 D ZenLog  : config: setInterruptionFilter,ZenModeConfig[user=0,allowCalls=true,allowRepeatCallers=false,allowMessages=false,allowCallsFrom=contacts,allowMessagesFrom=contacts,allowReminders=true,allowEvents=true,allowWhenScreenOff=true,allowWhenScreenOn=true,automaticRules={9b162d6d58da46c196cb25b1b9d515d6=ZenRule[enabled=false,snoozing=false,name=Weekend,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=9b162d6d58da46c196cb25b1b9d515d6,creationTime=1544717514822,enabler=null], b08e9cb77e9d4e1b95195d877fe3bce9=ZenRule[enabled=false,snoozing=false,name=Event,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=Condition[id=condition://android/event?userId=-10000&calendar=&reply=1,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.EventConditionProvider},id=b08e9cb77e9d4e1b95195d877fe3bce9,creationTime=1544717514822,enabler=null], 976cf20a39984a09b339feb572483b2d=ZenRule[enabled=false,snoozing=false,name=Weeknight,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=976cf20a39984a09b339feb572483b2d,creationTime=1544717514822,enabler=null]},manualRule=ZenRule[enabled=true,snoozing=false,name=null,zenMode=ZEN_MODE_ALARMS,conditionId=null,condition=null,component=null,id=null,creationTime=0,enabler=com.android.server.telecom]],Diff[manualRule:insert]
+12-13 11:17:04.588   560   572 I Telecom : PhoneAccountRegistrar: SimCallManager queried, returning: null: CSW.qRCS@AFs
+12-13 11:17:04.605   560   957 I Telecom : CallAudioRouteStateMachine: setSystemAudioState: changing from [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] to [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: PCR.oR->CAMSM.pM_2001->CARSM.pM_SWITCH_FOCUS@AFY_2_2
+12-13 11:17:04.606   847   847 I Telephony: TelephonyConnectionService: onCreateOutgoingConnection, request: ConnectionRequest xxxxxxxxxxxxxxx Bundle[mParcelledData.dataSize=484]
+12-13 11:17:04.617   560   560 D ZenLog  : set_zen_mode: alarms,setInterruptionFilter
+12-13 11:17:04.620   560   560 D ZenLog  : set_ringer_mode_internal: ZenModeHelper,i:normal->silent,e:normal->silent
+12-13 11:17:04.621   742   900 I vol.Events: writeEvent internal_ringer_mode_changed silent
+12-13 11:17:04.621   742   900 I vol.Events: writeEvent mute_changed STREAM_RING true
+12-13 11:17:04.621   742   900 I vol.Events: writeEvent mute_changed STREAM_SYSTEM true
+12-13 11:17:04.621   742   900 I vol.Events: writeEvent external_ringer_mode_changed silent
+12-13 11:17:04.635   560   560 I Telecom : CallerInfoLookupHelper: CI query for handle tel:*********** has completed; notifying all listeners.: NOCBIR.oR->CILH.sL->CILH.oQC@AFg_0_0
+12-13 11:17:04.635   560   560 I Telecom : Call: CallerInfo received for tel:***********: com.android.internal.telephony.CallerInfo@c751ada { name non-null, phoneNumber non-null }: NOCBIR.oR->CILH.sL->CILH.oQC@AFg_0_0
+12-13 11:17:04.635   560   560 I Telecom : CallerInfoLookupHelper: There is no photo for this contact, skipping photo query: NOCBIR.oR->CILH.sL->CILH.oQC@AFg_0_0
+12-13 11:17:04.636   742   900 I vol.Events: writeEvent zen_mode_changed alarms
+12-13 11:17:04.640  2024  2024 I InCall  : InCallPresenter - UI Initialized
+12-13 11:17:04.644  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.649  2024  2024 I InCall  : InCallActivity - onResume()...
+12-13 11:17:04.654  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=0, hor=0, ui=1, aud=EARPIECE}
+12-13 11:17:04.654  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already released
+12-13 11:17:04.666   268   307 D baseband-call: calling: 12345678909
+12-13 11:17:04.677   560   882 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities:], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.681   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.681   560   882 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.685   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.685   560   882 I Telecom : Event: Call TC@1: CAPABILITY_CHANGE, Current: [[ sup_hld mut !v2a]], Removed [[]], Added [[ sup_hld mut !v2a]]: CSW.hCCC@AF4
+12-13 11:17:04.685   560   882 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.687  2024  2024 D         : HostConnection::get() New Host Connection established 0xda4d6100, tid 2024
+12-13 11:17:04.689   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.690   560   882 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.690   560   966 I Telecom : CallAudioModeStateMachine: Message received: FOREGROUND_VOIP_MODE_CHANGE.: CSW.hCCC->CAMSM.pM_4001@AF4_0
+12-13 11:17:04.694   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.695   560   882 I Telecom : InCallController: Sending updateCall [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.697  2024  2024 W         : Process pipe failed
+12-13 11:17:04.702   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.703   560   882 I Telecom : CallsManager: setCallState CONNECTING -> DIALING, call: [TC@1, CONNECTING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.703   560   882 I Telecom : Event: Call TC@1: SET_DIALING, successful outgoing call: CSW.hCCC@AF4
+12-13 11:17:04.703   560   560 D GpsNetInitiatedHandler: onCallStateChanged(): state is 2
+12-13 11:17:04.703   560   966 I Telecom : CallAudioModeStateMachine: Message received: NEW_ACTIVE_OR_DIALING_CALL.: CSW.hCCC->CAMSM.pM_2001@AF4_1
+12-13 11:17:04.706   560   574 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x10 (has extras) } to ProcessRecord{6394ce7 742:com.android.systemui/u0a23} (pid=742, uid=10023) requires android.permission.READ_PHONE_STATE due to sender android (uid 1000)
+12-13 11:17:04.706   560   882 I Telecom : PhoneStateBroadcaster: Broadcasted state change: 2: CSW.hCCC@AF4
+12-13 11:17:04.706   560   882 I Telecom : TelecomWakeLock: WakeLock already released with id: 26: CSW.hCCC@AF4
+12-13 11:17:04.706   560   882 I Telecom : InCallWakeLockController: Releasing full wake lock: CSW.hCCC@AF4
+12-13 11:17:04.706   560   882 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.712   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.712   560   957 I Telecom : CallAudioRouteStateMachine: Message received: UPDATE_SYSTEM_AUDIO_ROUTE=1201, arg1=0: CSW.hCCC->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AF4_2
+12-13 11:17:04.712   560   882 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.722   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.hCCC@AF4
+12-13 11:17:04.722   560   882 I Telecom : CallsManager: setCallState DIALING -> DIALING, call: [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.hCCC@AF4
+12-13 11:17:04.722   560   957 I Telecom : CallAudioRouteStateMachine: setSystemAudioState: changing from [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] to [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: CSW.hCCC->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AF4_2
+12-13 11:17:04.722   560   957 I Telecom : InCallController: Calling onAudioStateChanged, audioState: [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] -> [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: CSW.hCCC->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AF4_2
+12-13 11:17:04.724   560   882 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sSH@AGE
+12-13 11:17:04.750   560   882 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.sSH@AGE
+12-13 11:17:04.765   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:04.765  2024  2046 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:17:04.768  2024  2046 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:17:04.768  2024  2046 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:17:04.769  2024  2046 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:17:04.778  2024  2046 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:17:04.804  2024  2046 D         : HostConnection::get() New Host Connection established 0xda4d6480, tid 2046
+12-13 11:17:04.817   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:04.845   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:04.857  2024  2046 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:17:04.857  2024  2046 D OpenGLRenderer: Swap behavior 1
+12-13 11:17:04.921  2024  2024 I InCall  : CallList - onUpdate - [Call_0, CONNECTING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:04.921  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.921  2024  2024 I InCall  : CallList - onUpdate - [Call_0, CONNECTING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:04.921  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.921  2024  2024 I InCall  : CallList - onUpdate - [Call_0, CONNECTING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:04.921  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.922  2024  2024 I InCall  : CallList - onUpdate - [Call_0, CONNECTING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:04.922  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> PENDING_OUTGOING
+12-13 11:17:04.972  2024  2046 E EGL_emulation: tid 2046: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:04.972  2024  2046 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdcdce8a0, error=EGL_BAD_MATCH
+12-13 11:17:05.085  2024  2024 I InCall  : CallList - onUpdate - [Call_0, DIALING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:05.085  2024  2024 I InCall  : InCallPresenter - Start in call UI
+12-13 11:17:05.085  2024  2024 I InCall  : InCallPresenter - Showing InCallActivity
+12-13 11:17:05.085   560  1294 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x10040000 cmp=com.android.dialer/com.android.incallui.InCallActivity (has extras)} from uid 10008 on display 0
+12-13 11:17:05.339  2024  2024 I InCall  : InCallPresenter - Phone switching state: PENDING_OUTGOING -> OUTGOING
+12-13 11:17:05.339  2024  2024 D AccelerometerListener: enable(true)
+12-13 11:17:05.340   560   716 D Sensors : batch handle 1, but there is no batch sensor in genymotion
+12-13 11:17:05.341  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=1, hor=0, ui=1, aud=EARPIECE}
+12-13 11:17:05.341  2024  2024 I InCall  : ProximitySensor - Acquiring proximity wake lock
+12-13 11:17:05.342   560   583 D Sensors : batch handle 10, but there is no batch sensor in genymotion
+12-13 11:17:05.344  2024  2024 D CallerInfoUtils: modifyForSpecialCnapCases: initially, number=xxxxxxxxxxx, presentation=1 ci com.android.incallui.CallerInfo@528f467 { name null, phoneNumber null }
+12-13 11:17:05.344  2024  2024 D CallerInfoUtils: SpecialCnap: number=xxxxxxxxxxx; presentation now=1
+12-13 11:17:05.344  2024  2024 D CallerInfoUtils: modifyForSpecialCnapCases: returning number string=xxxxxxxxxxx
+12-13 11:17:05.352  2024  2024 D CallerInfoUtils: ==> Actually starting CallerInfoAsyncQuery.startQuery()...
+12-13 11:17:05.361   560   581 I ActivityManager: Displayed com.android.dialer/com.android.incallui.InCallActivity: +932ms (total +1s456ms)
+12-13 11:17:05.392  2024  2024 I InCall  : StatusBarNotifier - Displaying notification for 1
+12-13 11:17:05.400   560   560 D ZenLog  : intercepted: 0|com.android.dialer|1|null|10008,alarmsOnly
+12-13 11:17:05.400   560   560 V NotificationService: pkg=com.android.dialer canInterrupt=false intercept=true
+12-13 11:17:05.463  2024  2024 D CallerInfoUtils: modifyForSpecialCnapCases: initially, number=xxxxxxxxxxx, presentation=1 ci com.android.incallui.CallerInfo@af666d2 { name null, phoneNumber null }
+12-13 11:17:05.463  2024  2024 D CallerInfoUtils: SpecialCnap: number=xxxxxxxxxxx; presentation now=1
+12-13 11:17:05.463  2024  2024 D CallerInfoUtils: modifyForSpecialCnapCases: returning number string=xxxxxxxxxxx
+12-13 11:17:05.468   560   638 D ProximitySensor: proximity event 10.000000
+12-13 11:17:05.489  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=1, hor=0, ui=0, aud=EARPIECE}
+12-13 11:17:05.489  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already acquired
+12-13 11:17:05.491  2024  2024 W InCall  : String - An instance of CircularRevealFragment already exists
+12-13 11:17:05.491  2024  2024 I InCall  : InCallActivity - onResume()...
+12-13 11:17:05.497  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=1, hor=0, ui=1, aud=EARPIECE}
+12-13 11:17:05.497  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already acquired
+12-13 11:17:05.511  2024  2024 I InCall  : StatusBarNotifier - Displaying notification for 1
+12-13 11:17:05.519   560   560 V NotificationService: pkg=com.android.dialer canInterrupt=false intercept=true
+12-13 11:17:06.788  1720  1720 D MonkeyStub: translateCommand: tap 551 1592
+12-13 11:17:06.896  2024  2024 I InCall  : CallCardPresenter - Disconnecting call: [Call_0, DIALING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:06.898  2024  2024 I InCall  : CallList - onUpdate - [Call_0, DISCONNECTING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:06.898  2024  2024 I InCall  : InCallPresenter - Phone switching state: OUTGOING -> INCALL
+12-13 11:17:06.898  2024  2024 D AccelerometerListener: enable(false)
+12-13 11:17:06.899   560   944 D Sensors : batch handle 1, but there is no batch sensor in genymotion
+12-13 11:17:06.900  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=0, hor=0, ui=1, aud=EARPIECE}
+12-13 11:17:06.900  2024  2024 I InCall  : ProximitySensor - Releasing proximity wake lock
+12-13 11:17:06.972   560  1294 I Telecom : Event: Call TC@1: REQUEST_DISCONNECT, null: ICA.dC(InCall package: com.android.dialer)@AG4
+12-13 11:17:06.972   560  1294 I Telecom : Call: Send disconnect to connection service for call: [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: ICA.dC(InCall package: com.android.dialer)@AG4
+12-13 11:17:07.012   560   944 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sSH@AG8
+12-13 11:17:07.056   847  2063 D CallNotifier: SignalInfoTonePlayer.run(toneId = 98)...
+12-13 11:17:07.067   560   944 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.sSH@AG8
+12-13 11:17:07.069   560   944 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sCC@AHA
+12-13 11:17:07.107   560   944 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.sCC@AHA
+12-13 11:17:07.111   560   944 I Telecom : InCallController: Sending updateCall [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sCC@AHE
+12-13 11:17:07.154   847  2063 D AudioTrack: Client defaulted notificationFrames to 512 for frameCount 1024
+12-13 11:17:07.168   847  2063 D CallNotifier: CallNotifier: mSignalInfoToneGenerator created when toneplay
+12-13 11:17:07.182   560   944 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.sCC@AHE
+12-13 11:17:07.183   560   944 I Telecom : CallsManager: setCallState DIALING -> DISCONNECTED, call: [TC@1, DIALING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sDc@AHI
+12-13 11:17:07.183   560   944 I Telecom : Event: Call TC@1: SET_DISCONNECTED, disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: (LOCAL) Tone: (27) ]: CSW.sDc@AHI
+12-13 11:17:07.184   560   944 I Telecom : InCallController: onCanAddCallChanged : true: CSW.sDc@AHI
+12-13 11:17:07.186   560   957 I Telecom : CallAudioRouteStateMachine: Message received: UPDATE_SYSTEM_AUDIO_ROUTE=1201, arg1=0: CSW.sDc->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AHI_0
+12-13 11:17:07.190   560   966 I Telecom : CallAudioModeStateMachine: Message received: TONE_STARTED_PLAYING.: CSW.sDc->CAMSM.pM_3001@AHI_1
+12-13 11:17:07.191   560   966 I Telecom : CallAudioModeStateMachine: Message received: NO_MORE_ACTIVE_OR_DIALING_CALLS.: CSW.sDc->CAMSM.pM_1001@AHI_3
+12-13 11:17:07.191   560   560 D GpsNetInitiatedHandler: onCallStateChanged(): state is 0
+12-13 11:17:07.191   560   966 I Telecom : CallAudioModeStateMachine: Audio focus entering TONE/HOLDING state: CSW.sDc->CAMSM.pM_1001@AHI_3
+12-13 11:17:07.191   560   966 I MediaFocusControl:  AudioFocus  requestAudioFocus() from uid/pid 1000/560 clientId=AudioFocus_For_Phone_Ring_And_Calls req=2 flags=0x4
+12-13 11:17:07.200   560   574 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x10 (has extras) } to ProcessRecord{6394ce7 742:com.android.systemui/u0a23} (pid=742, uid=10023) requires android.permission.READ_PHONE_STATE due to sender android (uid 1000)
+12-13 11:17:07.201   560   944 I Telecom : PhoneStateBroadcaster: Broadcasted state change: 0: CSW.sDc@AHI
+12-13 11:17:07.201   560   944 I Telecom : CallLogManager: Country cache is null. Detecting Country and Setting Cache...: CSW.sDc@AHI
+12-13 11:17:07.225   560   944 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:892 android.content.ContextWrapper.sendBroadcast:426 com.android.server.telecom.CallLogManager.sendAddCallBroadcast:426 com.android.server.telecom.CallLogManager.logCall:273 com.android.server.telecom.CallLogManager.logCall:220 
+12-13 11:17:07.226   560   944 I Telecom : TelecomWakeLock: WakeLock already released with id: 26: CSW.sDc@AHI
+12-13 11:17:07.226   560   944 I Telecom : InCallWakeLockController: Releasing full wake lock: CSW.sDc@AHI
+12-13 11:17:07.226   560   944 I Telecom : InCallController: Sending updateCall [TC@1, DISCONNECTED, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.sDc@AHI
+12-13 11:17:07.229   560   944 I Telecom : InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]: CSW.sDc@AHI
+12-13 11:17:07.230   560   957 I Telecom : CallAudioRouteStateMachine: setSystemAudioState: changing from [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] to [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: CSW.sDc->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AHI_0
+12-13 11:17:07.230   560   957 I Telecom : InCallController: Calling onAudioStateChanged, audioState: [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] -> [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]: CSW.sDc->CARSM.pM_UPDATE_SYSTEM_AUDIO_ROUTE@AHI_0
+12-13 11:17:07.231   560   944 I Telecom : ConnectionServiceWrapper: Service unbound ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, from unbind.: CSW.rC@AHU
+12-13 11:17:07.232   560   944 I Telecom : Event: Call TC@1: DESTROYED, null: CSW.rC@AHU
+12-13 11:17:07.232   560   944 I Telecom : TelecomWakeLock: WakeLock already released with id: 26: CSW.rC@AHU
+12-13 11:17:07.232   560   944 I Telecom : InCallWakeLockController: Releasing full wake lock: CSW.rC@AHU
+12-13 11:17:07.233   560   944 I Telecom : ProximitySensorManager: All calls removed, resetting proximity sensor to default state: CSW.rC@AHU
+12-13 11:17:07.233   560   944 I Telecom : TelecomWakeLock: WakeLock already released with id: 32: CSW.rC@AHU
+12-13 11:17:07.233   560   944 I Telecom : InCallController: onCallRemoved: [TC@1, DISCONNECTED, null, tel:***********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:]]: CSW.rC@AHU
+12-13 11:17:07.272  1742  1881 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:07.316  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:07.351   560   574 I ActivityManager: Start proc 2072:com.android.calllogbackup/u0a1 for broadcast com.android.calllogbackup/.CallLogChangeReceiver
+12-13 11:17:07.353  2072  2072 W art     : Unexpected CPU variant for X86 using defaults: x86
+12-13 11:17:07.433  2072  2072 W System  : ClassLoader referenced unknown path: /system/priv-app/CallLogBackup/lib/x86
+12-13 11:17:07.449   560  2065 D AudioTrack: Client defaulted notificationFrames to 512 for frameCount 1024
+12-13 11:17:07.453   560   957 I Telecom : CallAudioRouteStateMachine: Message received: SWITCH_FOCUS=4001, arg1=2: CSW.sDc->CAMSM.pM_1001->CARSM.pM_SWITCH_FOCUS@AHI_3_2
+12-13 11:17:07.453   560   957 I Telecom : CallAudioRouteStateMachine: setNotificationsSuppressed: on=yes; suppressed=yes: CSW.sDc->CAMSM.pM_1001->CARSM.pM_SWITCH_FOCUS@AHI_3_2
+12-13 11:17:07.486   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(7)
+12-13 11:17:07.508  2024  2024 I InCall  : CallList - onDisconnect: [Call_0, DISCONNECTED, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:07.508  2024  2024 I InCall  : InCallPresenter - Phone switching state: INCALL -> INCALL
+12-13 11:17:07.558  2024  2024 I InCall  : CallList - onUpdate - [Call_0, DISCONNECTED, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:07.558  2024  2024 I InCall  : InCallPresenter - Phone switching state: INCALL -> INCALL
+12-13 11:17:07.577  2024  2024 I InCall  : CallList - onUpdate - [Call_0, DISCONNECTED, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO], [Properties:], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+12-13 11:17:07.577  2024  2024 I InCall  : InCallPresenter - Phone switching state: INCALL -> INCALL
+12-13 11:17:07.617  2024  2024 W InCall  : CallList - Removing call not previously disconnected Call_0
+12-13 11:17:07.698   560   966 I Telecom : CallAudioModeStateMachine: Message received: TONE_STOPPED_PLAYING.: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002@AHI_2_0_0
+12-13 11:17:07.698   560   966 I Telecom : CallAudioModeStateMachine: Abandoning audio focus: now UNFOCUSED: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002@AHI_2_0_0
+12-13 11:17:07.699   560   966 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from uid/pid 1000/560 clientId=AudioFocus_For_Phone_Ring_And_Calls
+12-13 11:17:07.732   560   957 I Telecom : CallAudioRouteStateMachine: Message received: SWITCH_FOCUS=4001, arg1=1: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002->CARSM.pM_SWITCH_FOCUS@AHI_2_0_0_2
+12-13 11:17:07.732   560   957 I Telecom : Telecom: Non-call EVENT: UNMUTE, null: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002->CARSM.pM_SWITCH_FOCUS@AHI_2_0_0_2
+12-13 11:17:07.733   560   957 I Telecom : Telecom: Non-call EVENT: AUDIO_ROUTE, Leaving state ActiveEarpieceRoute: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002->CARSM.pM_SWITCH_FOCUS@AHI_2_0_0_2
+12-13 11:17:07.733   560   957 I Telecom : CallAudioRouteStateMachine: setNotificationsSuppressed: on=no; suppressed=yes: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002->CARSM.pM_SWITCH_FOCUS@AHI_2_0_0_2
+12-13 11:17:07.737   560   957 D ZenLog  : config: setInterruptionFilter,ZenModeConfig[user=0,allowCalls=true,allowRepeatCallers=false,allowMessages=false,allowCallsFrom=contacts,allowMessagesFrom=contacts,allowReminders=true,allowEvents=true,allowWhenScreenOff=true,allowWhenScreenOn=true,automaticRules={9b162d6d58da46c196cb25b1b9d515d6=ZenRule[enabled=false,snoozing=false,name=Weekend,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=9b162d6d58da46c196cb25b1b9d515d6,creationTime=1544717514822,enabler=null], b08e9cb77e9d4e1b95195d877fe3bce9=ZenRule[enabled=false,snoozing=false,name=Event,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=Condition[id=condition://android/event?userId=-10000&calendar=&reply=1,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.EventConditionProvider},id=b08e9cb77e9d4e1b95195d877fe3bce9,creationTime=1544717514822,enabler=null], 976cf20a39984a09b339feb572483b2d=ZenRule[enabled=false,snoozing=false,name=Weeknight,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=976cf20a39984a09b339feb572483b2d,creationTime=1544717514822,enabler=null]},manualRule=null],Diff[manualRule:delete]
+12-13 11:17:07.737   560   957 I Telecom : Telecom: Non-call EVENT: AUDIO_ROUTE, Entering state QuiescentEarpieceRoute: CSW.sDc->ICTP.r->ICTP.cUTP->CAMSM.pM_3002->CARSM.pM_SWITCH_FOCUS@AHI_2_0_0_2
+12-13 11:17:07.749   560   560 D ZenLog  : set_zen_mode: off,setInterruptionFilter
+12-13 11:17:07.769   742   900 I vol.Events: writeEvent mute_changed STREAM_RING false
+12-13 11:17:07.771   560   560 D ZenLog  : set_ringer_mode_internal: ZenModeHelper,i:silent->normal,e:silent->normal
+12-13 11:17:07.771   742   900 I vol.Events: writeEvent mute_changed STREAM_SYSTEM false
+12-13 11:17:07.771   742   900 I vol.Events: writeEvent internal_ringer_mode_changed normal
+12-13 11:17:07.772  2024  2024 I InCall  : InCallPresenter - Hide in call UI: true
+12-13 11:17:07.775  2024  2024 I InCall  : InCallActivity - finish().  Dialog showing: false
+12-13 11:17:07.776   742   900 I vol.Events: writeEvent external_ringer_mode_changed normal
+12-13 11:17:07.776   742   900 I vol.Events: writeEvent zen_mode_changed off
+12-13 11:17:07.790  2024  2024 I InCall  : InCallPresenter - attemptCleanup? false
+12-13 11:17:07.790  2024  2024 I InCall  : InCallPresenter - Phone switching state: INCALL -> NO_CALLS
+12-13 11:17:07.851  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:07.852  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:07.853  2024  2024 I InCall  : ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=0, hor=0, ui=0, aud=EARPIECE}
+12-13 11:17:07.853  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already released
+12-13 11:17:07.853  2024  2024 I InCall  : InCallPresenter - UI Destroyed
+12-13 11:17:07.854  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:07.855  2024  2024 I InCall  : InCallPresenter - attemptCleanup? false
+12-13 11:17:08.143   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:17:08.179   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:17:08.295  2024  2024 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+12-13 11:17:08.296  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:08.296  1742  1881 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:08.298  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:08.331  1742  2016 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:08.405  2024  2024 I InCall  : InCallPresenter - No InCallActivity currently set, no need to unset.
+12-13 11:17:08.651   847  1494 V VvmTaskScheduler: executing task com.android.phone.vvm.omtp.ActivationTask@52b6de6
+12-13 11:17:08.663   847  1494 I VvmActivationTask: VVM content provider configured - vvm_type_cvvm
+12-13 11:17:08.663   847  1494 I OmtpVvmCarrierCfgHlpr: OmtpEvent:CONFIG_ACTIVATING
+12-13 11:17:08.676   847  1494 V OmtpMessageSender: Sending BINARY sms 'Activate:dt=15' to 122:1808
+12-13 11:17:08.684   268   307 D baseband-sms: newsms
+12-13 11:17:08.684   268   307 D baseband-sms: sender:(N/A)
+12-13 11:17:08.684   268   307 D baseband-sms: receiver:122
+12-13 11:17:09.236   560   560 I Telecom : EmergencyInCallServiceConnection: Disconnect forced!: CSW.rC->ICC.oCR@AHU_0
+12-13 11:17:09.238  2024  2024 I InCall  : InCallPresenter - setBoundAndWaitingForOutgoingCall: false
+12-13 11:17:09.238  2024  2024 I InCall  : InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+12-13 11:17:09.238  2024  2024 I InCall  : InCallPresenter - attemptCleanup? true
+12-13 11:17:09.238  2024  2024 D AccelerometerListener: enable(false)
+12-13 11:17:09.238  2024  2024 I InCall  : ProximitySensor - Proximity wake lock already released
+12-13 11:17:09.241   560  1294 I ActivityManager: Killing 1297:com.android.provision/u0a18 (adj 906): empty #17
+12-13 11:17:09.280   560   571 D ActivityManager: cleanUpApplicationRecord -- 1297
+12-13 11:17:09.801  1720  1720 D MonkeyStub: translateCommand: tap 975 1272
+12-13 11:17:09.820   560   937 I ActivityManager: START u0 {act=android.intent.action.SENDTO dat=smsto:xxxxx-xxx-xxxx flg=0x10000000 cmp=com.android.messaging/.ui.conversation.LaunchConversationActivity} from uid 10005 on display 0
+12-13 11:17:09.924  1742  2016 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:10.038  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:10.101   560   944 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x1000c000 cmp=com.android.messaging/.ui.conversationlist.ConversationListActivity} from uid 10061 on display 0
+12-13 11:17:10.115   560   944 I ActivityManager: START u0 {flg=0x14000000 cmp=com.android.messaging/.ui.conversation.ConversationActivity (has extras)} from uid 10061 on display 0
+12-13 11:17:10.123  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:10.123  1742  2016 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:10.157  1742  1871 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:10.318   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:17:10.328   560   571 D         : HostConnection::get() New Host Connection established 0xc4059fc0, tid 571
+12-13 11:17:10.390   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:17:10.584   560   581 W art     : Long monitor contention with owner Binder:560_1 (571) at android.graphics.Bitmap com.android.server.wm.WindowManagerService.screenshotApplicationsInner(android.os.IBinder, int, int, int, boolean, float, android.graphics.Bitmap$Config, boolean)(WindowManagerService.java:6462) waiters=0 in android.os.IBinder com.android.server.wm.WindowManagerService$LocalService.getFocusedWindowToken() for 334ms
+12-13 11:17:10.590   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:17:10.790  1619  1619 D MessagingApp: DraftMessageData: loading for conversationId=1
+12-13 11:17:10.862  1619  1619 D         : HostConnection::get() New Host Connection established 0xc9ceeb40, tid 1619
+12-13 11:17:10.871  1619  1619 W         : Process pipe failed
+12-13 11:17:11.152   270   813 V EmulatedCamera_Camera: getCameraInfo
+12-13 11:17:11.152   270   813 V EmulatedCamera_BaseCamera: getCameraInfo
+12-13 11:17:11.154   270   270 V EmulatedCamera_Camera: getCameraInfo
+12-13 11:17:11.154   270   270 V EmulatedCamera_BaseCamera: getCameraInfo
+12-13 11:17:11.165  1619  2103 D MessagingApp: ReadDraftMessage: created draft. conversationId=1 selfId=1
+12-13 11:17:11.185   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:11.185  1619  2100 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+12-13 11:17:11.186  1619  2100 E libEGL  : load_driver(/system/lib/egl/libGLES_emulation.so): dlopen failed: library "/system/lib/egl/libGLES_emulation.so" not found
+12-13 11:17:11.188  1619  2100 D libEGL  : loaded /system/lib/egl/libEGL_emulation.so
+12-13 11:17:11.199  1619  2100 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_emulation.so
+12-13 11:17:11.202   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:11.218  1619  2100 D libEGL  : loaded /system/lib/egl/libGLESv2_emulation.so
+12-13 11:17:11.232  1619  2100 D         : HostConnection::get() New Host Connection established 0xc99eae40, tid 2100
+12-13 11:17:11.233   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:11.245   560   581 I Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+12-13 11:17:11.257  1619  2100 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 11:17:11.257  1619  2100 D OpenGLRenderer: Swap behavior 1
+12-13 11:17:11.388  1619  2100 E EGL_emulation: tid 2100: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:11.388  1619  2100 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc90afee0, error=EGL_BAD_MATCH
+12-13 11:17:11.892   560  1294 W art     : Long monitor contention with owner android.display (581) at void com.android.server.wm.WindowAnimator$1.doFrame(long)(WindowAnimator.java:144) waiters=1 in void com.android.server.wm.WindowManagerService.finishDrawingWindow(com.android.server.wm.Session, android.view.IWindow) for 126ms
+12-13 11:17:12.000  1619  1619 W ViewPager: Requested offscreen page limit 0 too small; defaulting to 1
+12-13 11:17:12.003  1619  1619 W ViewPager: Requested offscreen page limit 0 too small; defaulting to 1
+12-13 11:17:12.006  1619  2107 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1544717569840 to 1544717830781 (message update limit = 80, message scan limit = 4000)
+12-13 11:17:12.023   560   581 I ActivityManager: Displayed com.android.messaging/.ui.conversation.ConversationActivity: +1s774ms (total +2s118ms)
+12-13 11:17:12.055  1619  1619 D MessagingApp: DraftMessageData: draft loaded. conversationId=1 selfId=1
+12-13 11:17:12.078  1619  1619 I Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.
+12-13 11:17:12.203  1619  2108 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+12-13 11:17:14.807  1720  1720 D MonkeyStub: translateCommand: tap 846 1863
+12-13 11:17:14.861   560   937 I ActivityManager: START u0 {flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10023 on display 0
+12-13 11:17:14.925   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:17:14.979   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:17:15.199   560   574 W art     : Long monitor contention with owner Binder:560_5 (937) at int com.android.server.am.ActivityStarter.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord)(ActivityStarter.java:765) waiters=0 in void com.android.server.am.ActivityManagerService$MainHandler.handleMessage(android.os.Message) for 315ms
+12-13 11:17:15.714   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:15.729   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:15.751   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:15.784   742   974 E EGL_emulation: tid 974: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:15.784   742   974 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc627f000, error=EGL_BAD_MATCH
+12-13 11:17:16.169   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:17:16.208   268   307 D baseband-sms: index:1/1
+12-13 11:17:16.208   268   307 D baseband-sms: txt:'FQKf.Σ:etΔ#W'
+12-13 11:17:16.212   847   847 D VvmStatusSmsFetcher: Request SMS successfully sent
+12-13 11:17:16.311   560   581 I ActivityManager: Displayed com.android.systemui/.recents.RecentsActivity: +1s115ms
+12-13 11:17:17.816  1720  1720 D MonkeyStub: translateCommand: tap 846 1863
+12-13 11:17:17.882   560   937 E ActivityManager: applyOptionsLocked: Unknown animationType=0
+12-13 11:17:17.940  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:17.947  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:17.948  1742  1871 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:18.006   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.037  1742  1881 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:18.039   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.088   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.121  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:18.121  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de59a0, error=EGL_BAD_MATCH
+12-13 11:17:18.196   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:17:18.295   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:17:18.372   560   581 W art     : Long monitor contention with owner Binder:560_6 (944) at int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface)(WindowManagerService.java:2850) waiters=0 in void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) for 199ms
+12-13 11:17:18.372   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.373   560   571 W art     : Long monitor contention with owner Binder:560_6 (944) at int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface)(WindowManagerService.java:2850) waiters=1 in void com.android.server.wm.WindowManagerService.statusBarVisibilityChanged(int) for 199ms
+12-13 11:17:18.403   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.426   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:18.456  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:18.456  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc80ff9e0, error=EGL_BAD_MATCH
+12-13 11:17:18.664  1742  1742 I Choreographer: Skipped 42 frames!  The application may be doing too much work on its main thread.
+12-13 11:17:20.824  1720  1720 D MonkeyStub: translateCommand: press KEYCODE_BACK
+12-13 11:17:23.832  1720  1720 D MonkeyStub: translateCommand: tap 432 656
+12-13 11:17:23.941   560   716 I ActivityManager: START u0 {act=android.provider.action.QUICK_CONTACT dat=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1 flg=0x4000000 pkg=com.android.contacts cmp=com.android.contacts/.quickcontact.QuickContactActivity (has extras)} from uid 10005 on display 0
+12-13 11:17:24.018  1742  1871 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:24.127   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:24.154   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:24.184   603   624 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:24.245  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:24.245  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5220, error=EGL_BAD_MATCH
+12-13 11:17:24.267  1742  2016 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:24.441   560   581 I ActivityManager: Displayed com.android.contacts/.quickcontact.QuickContactActivity: +438ms
+12-13 11:17:24.520  1742  1742 I ContactLoader: Registering content observer for content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:24.721  1742  1742 V SmsInteractionsLoader: SmsInteractionsLoader
+12-13 11:17:24.721  1742  2016 V SmsInteractionsLoader: loadInBackground
+12-13 11:17:24.746  1742  1871 V CalendarInteractionsLoader: # ContactInteraction Loaded: 0
+12-13 11:17:26.836  1720  1720 D MonkeyStub: translateCommand: tap 1023 133
+12-13 11:17:26.913   269   287 D AudioFlinger: mixer(0xece838c0) throttle end: throttle time(1)
+12-13 11:17:26.991   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:27.007   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:27.021   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:27.056  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:27.057  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5a00, error=EGL_BAD_MATCH
+12-13 11:17:29.841  1720  1720 D MonkeyStub: translateCommand: tap 790 125
+12-13 11:17:30.245   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:30.253   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:30.259   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:30.276  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:30.276  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de5a80, error=EGL_BAD_MATCH
+12-13 11:17:30.413  1742  1768 D OpenGLRenderer: endAllActiveAnimators on 0xc7f5de80 (MenuPopupWindow$MenuDropDownListView) with handle 0xc2dd6a30
+12-13 11:17:32.850  1720  1720 D MonkeyStub: translateCommand: tap 670 996
+12-13 11:17:33.128   560   716 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@f841811 attribute=null, token = android.os.BinderProxy@5e700c8
+12-13 11:17:33.223   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:33.238   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:33.247   603   606 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:33.273  1742  1768 E EGL_emulation: tid 1768: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:33.273  1742  1768 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc2de54c0, error=EGL_BAD_MATCH
+12-13 11:17:33.366  1742  1881 E ContactLoader: loadInBackground=content://com.android.contacts/contacts/lookup/0r1-3B453743294F372943/1
+12-13 11:17:35.855  1720  1720 D MonkeyStub: translateCommand: tap 846 1863
+12-13 11:17:35.889   560   716 I ActivityManager: START u0 {flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10023 on display 0
+12-13 11:17:35.941   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x333 imply creation of host color buffer
+12-13 11:17:35.960   560   716 D         : HostConnection::get() New Host Connection established 0xc8f5bac0, tid 716
+12-13 11:17:36.012   603   603 E EGL_emulation: tid 603: eglCreateSyncKHR(1669): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-13 11:17:36.410   560   560 W WindowManager: Attempted to remove non-existing token: android.os.Binder@40220aa
+12-13 11:17:36.434   560   574 W art     : Long monitor contention with owner Binder:560_3 (716) at int com.android.server.am.ActivityStarter.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord)(ActivityStarter.java:765) waiters=0 in void com.android.server.am.ActivityManagerService$MainHandler.handleMessage(android.os.Message) for 530ms
+12-13 11:17:36.445   742   742 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+12-13 11:17:36.639   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:36.659   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:36.682   603  1158 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:36.719   742   974 E EGL_emulation: tid 974: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:36.720   742   974 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc627fcc0, error=EGL_BAD_MATCH
+12-13 11:17:36.934   603  1146 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x933 imply creation of host color buffer
+12-13 11:17:38.863  1720  1720 D MonkeyStub: translateCommand: tap 960 371
+12-13 11:17:39.325   560   716 I ActivityManager: Killing 1619:com.android.messaging/u0a61 (adj 900): remove task
+12-13 11:17:39.358   560   646 W InputDispatcher: channel '3cc51c1 com.android.messaging/com.android.messaging.ui.conversation.ConversationActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+12-13 11:17:39.358   560   646 E InputDispatcher: channel '3cc51c1 com.android.messaging/com.android.messaging.ui.conversation.ConversationActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-13 11:17:39.360   560   571 I WindowManager: WIN DEATH: Window{3cc51c1 u0 com.android.messaging/com.android.messaging.ui.conversation.ConversationActivity}
+12-13 11:17:39.360   560   571 W InputDispatcher: Attempted to unregister already unregistered input channel '3cc51c1 com.android.messaging/com.android.messaging.ui.conversation.ConversationActivity (server)'
+12-13 11:17:39.366   560   944 D ActivityManager: cleanUpApplicationRecord -- 1619
+12-13 11:17:39.369   560   882 D GraphicsStats: Buffer count: 10
+12-13 11:17:41.870  1720  1720 D MonkeyStub: translateCommand: tap 960 371
+12-13 11:17:42.316   560   882 I ActivityManager: Killing 1742:com.android.contacts/u0a5 (adj 900): remove task
+12-13 11:17:42.335   560   646 W InputDispatcher: channel '8487561 com.android.contacts/com.android.contacts.activities.PeopleActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+12-13 11:17:42.335   560   646 E InputDispatcher: channel '8487561 com.android.contacts/com.android.contacts.activities.PeopleActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-13 11:17:42.336   560   571 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@f644c13)
+12-13 11:17:42.336   560   571 D GraphicsStats: Buffer count: 9
+12-13 11:17:42.336   560   572 I WindowManager: WIN DEATH: Window{8487561 u0 com.android.contacts/com.android.contacts.activities.PeopleActivity}
+12-13 11:17:42.336   560   572 W InputDispatcher: Attempted to unregister already unregistered input channel '8487561 com.android.contacts/com.android.contacts.activities.PeopleActivity (server)'
+12-13 11:17:42.336   560   944 D ActivityManager: cleanUpApplicationRecord -- 1742
+12-13 11:17:42.336   560   674 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ LISTEN id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+12-13 11:17:42.480   560   948 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher3/.Launcher} from uid 10023 on display 0
+12-13 11:17:42.537   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:42.553   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:42.579   603   604 D gralloc_vbox86: gralloc_alloc: format 1 and usage 0x900 imply creation of host color buffer
+12-13 11:17:42.608  1362  1462 E EGL_emulation: tid 1462: eglSurfaceAttrib(1174): error 0x3009 (EGL_BAD_MATCH)
+12-13 11:17:42.608  1362  1462 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xc9712000, error=EGL_BAD_MATCH
+12-13 11:17:43.289  1362  1462 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
