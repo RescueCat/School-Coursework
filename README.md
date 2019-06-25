@@ -1,5 +1,8 @@
 # School-Coursework
 
+**Enterprise Software Engineerng** (CS 4743 | Fall 2018): *JAVA*
+> Providing a hands-on introduction to principles and best practices for the development of enterprise-level software systems. Topics include architectural patterns, database models, remote deployment and execution, and concurrency management.
+
 **Software Validation and Quality Assurance** (CS 4723 | Fall 2018): *Python and JAVA*
 > Study of software validation techniques. Introduction to static analysis and software testing approaches (functional testing, structural testing, integration testing and regression testing). Overview of test planning and test case design. Review of topics in quality assurance.
 
