@@ -1,5 +1,11 @@
 # School-Coursework
 
+**Artificial Intelligence** (CS 3793 | Spring 2019): *Python*
+> Discussion of theorem-proving by machine; includes computational linguistics, psychological modeling, and computer games.
+
+**Data Mining** (CS 4373 | Spring 2019): *Python*
+> Principles, techniques, systems and evaluation of data mining. Topics may include data preprocessing, frequent pattern mining, association mining, classification and prediction, cluster analysis, and advanced topics such as mining streams, time-Series, texts, and graphs.
+
 **Enterprise Software Engineerng** (CS 4743 | Fall 2018): *JAVA*
 > Providing a hands-on introduction to principles and best practices for the development of enterprise-level software systems. Topics include architectural patterns, database models, remote deployment and execution, and concurrency management.
 
