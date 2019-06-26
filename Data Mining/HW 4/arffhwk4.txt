@@ -1,0 +1,23 @@
+%ARFF file for Homework 4
+%A B C D E I K M N O U Y
+%
+@relation hwK04
+@attribute A { t}
+@attribute B { t}
+@attribute C { t}
+@attribute D { t}
+@attribute E { t}
+@attribute I { t}
+@attribute K { t}
+@attribute M { t}
+@attribute N { t}
+@attribute O { t}
+@attribute U { t}
+@attribute Y { t}
+@data
+?,?,?,?,t,?,t,t,t,t,?,?
+?,?,?,t,t,?,t,?,t,t,?,t
+t,?,?,?,t,?,t,t,?,?,?,?
+?,?,t,?,?,?,t,t,?,?,t,t
+?,?,t,?,t,t,t,?,?,t,?,?
+?,t,?,?,?,?,t,?,?,t,?,?

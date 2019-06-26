@@ -1,0 +1,3 @@
+QUESTION 2.b: Least Dissimilar Euclidean distance (NORMALIZED)
+      A   B    C         D        E  F
+234  a1  b1  195 -0.613266  9.28117  9

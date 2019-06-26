@@ -1,0 +1,3 @@
+QUESTION 2.a.2: Least Dissimilar Manhattan distance
+      A   B    C         D         E   F
+529  a1  b2  518  2.093137  5.530146  11

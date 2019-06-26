@@ -1,0 +1,26 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 10 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.6
+Relation:     hwK04
+Instances:    6
+Attributes:   12
+              A
+              B
+              C
+              D
+              E
+              I
+              K
+              M
+              N
+              O
+              U
+              Y
+=== Associator model (full training set) ===
+
+FPGrowth found 4 rules (displaying top 4)
+
+1. [O=t]: 4 ==> [K=t]: 4   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+2. [E=t]: 4 ==> [K=t]: 4   <conf:(1)> lift:(1) lev:(0) conv:(0) 
+3. [K=t]: 6 ==> [O=t]: 4   <conf:(0.67)> lift:(1) lev:(0) conv:(0.67) 
+4. [K=t]: 6 ==> [E=t]: 4   <conf:(0.67)> lift:(1) lev:(0) conv:(0.67) 

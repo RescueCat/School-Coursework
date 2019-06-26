@@ -1,0 +1,12 @@
+,Department,Status,Age,Salary,Count
+0,Sales,Senior,31..35,46k..50k,30
+1,Sales,Junior,26..30,26k..30k,40
+2,Sales,Junior,31..35,31k..35k,40
+3,Systems,Junior,21..25,46k..50k,20
+4,Systems,Senior,31..35,66k..70k,5
+5,Systems,Junior,26..30,46k..50k,3
+6,Systems,Senior,41..45,66k..70k,3
+7,Marketing,Senior,36..40,46k..50k,10
+8,Marketing,Junior,31..35,41k..45k,4
+9,Secretary,Senior,46..50,36k..40k,4
+10,Secretary,Junior,26..30,26k..30k,6

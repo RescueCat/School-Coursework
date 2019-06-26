@@ -1,0 +1,10 @@
+QUESTION 3: 
+Pearson’s Chi-square Test
+Chi-square statistic 13.463 where the p_value is 0.036 
+Since the p value (rAB) is greater than 0, A and B are postively correlated.
+B     b1   b2   All
+A                  
+a1   174  132   306
+a2   170  151   321
+a3   247  126   373
+All  591  409  1000

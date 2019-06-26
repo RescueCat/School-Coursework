@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.5 -D 0.05 -U 1.0 -M 0.2 -S -1.0 -c -1
+Relation:     hwK04
+Instances:    6
+Attributes:   12
+              A
+              B
+              C
+              D
+              E
+              I
+              K
+              M
+              N
+              O
+              U
+              Y
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.55 (3 instances)
+Minimum metric <confidence>: 0.5
+Number of cycles performed: 9
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Size of set of large itemsets L(2): 4
+
+Size of set of large itemsets L(3): 1
+
+Best rules found:
+
+ 1. E=t 4 ==> K=t 4    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 2. O=t 4 ==> K=t 4    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 3. M=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. E=t O=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 5. O=t 4 ==> E=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+ 6. E=t 4 ==> O=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+ 7. K=t O=t 4 ==> E=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+ 8. E=t K=t 4 ==> O=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+ 9. O=t 4 ==> E=t K=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+10. E=t 4 ==> K=t O=t 3    <conf:(0.75)> lift:(1.13) lev:(0.06) [0] conv:(0.67)
+
